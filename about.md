@@ -8,7 +8,7 @@ about: true
 
 昵称:noyobo  
 职业:前台端水  
-性别:男
+性别:男   
 爱好:guitar 
 
 #### 博客
