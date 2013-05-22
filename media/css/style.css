@@ -74,6 +74,10 @@ body{
 	
 	.article_list p{font-size:14px;}
 
+#archives{}
+	#archives h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+		#archives ul {padding:5px;}
+		#archives ul li{font-size:14px; line-height:1.5em;}
 
 #footer{font-size:13px; border-top:1px solid #333; padding-top:10px; position:relative;}
 	#copyright{text-align:center;}
