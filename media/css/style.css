@@ -32,8 +32,8 @@ hr {margin: 0;padding: 0;border: 0;color: #CDCDCD;background-color: #CDCDCD;heig
 blockquote{color:#666;font-style:italic;}
 sup,sub{line-height:0}
 abbr,acronym{border-bottom:1px dotted #666}
+
 code{
-	white-space:pre;
 	background-color: #F8F8F8;
 	border: 1px solid #DDD;
 	font-size: 13px;
@@ -56,6 +56,7 @@ background-color:#eeeeee;
 
 .post p, .post blockquote, .post ul, .post ol, .post dl, .post table, .post pre {
 margin: 15px 0;
+font-size:14px;
 }
 
 input[type="button"],input[type='submit']{cursor:pointer;}
@@ -117,8 +118,8 @@ body{
 
 .post{}
 	.post_title{padding:10px 0px;}
-		.post_title h2{border-bottom:1px solid #eeeeee;}
-		.post_title .data{font-size:12px;}
+		.post_title h2{border-bottom:1px dashed #AAA99C;}
+		.post_title .date{font-size:12px;}
 
 #tags{width:70%; float:left;}
 	#tags h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
