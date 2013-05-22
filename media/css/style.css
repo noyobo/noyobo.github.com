@@ -56,14 +56,6 @@ outline:none;
 clear:both;
 }
 
-.clearfix:after{content:".";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
-.clearfix{display:inline-block;}/* Hides from IE-mac \*/
-.clearfix{_height:1%;}
-.clearfix{display:block;}/* End hide from IE-mac */
-
-.fl{float:left;}
-.fr{float:right;} 
-
 body {
 line-height:180%;
 font-size:12px;
@@ -264,7 +256,6 @@ float:left;
 /*width:618px;*/
 padding:0 20px 0 20px;
 margin-top:25px;
-width:100%;
 }
 
 .sidebar {
