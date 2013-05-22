@@ -5,12 +5,12 @@ Author Email: noyobo@gmail.com
 +------------------------------
 */
 /*********base**********/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+body,div,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
 table{border-collapse:collapse;border-spacing:0}
 fieldset,img{border:0}
 address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal}
 strong, b{ font-weight: bold; }
-ol,ul{list-style:none}
+
 caption,th{text-align:left}
 h1,h2,h3,h4,h5,h6{font-weight:700;}
 h1{font-size:36px}
@@ -32,8 +32,31 @@ hr {margin: 0;padding: 0;border: 0;color: #CDCDCD;background-color: #CDCDCD;heig
 blockquote{color:#666;font-style:italic;}
 sup,sub{line-height:0}
 abbr,acronym{border-bottom:1px dotted #666}
-pre{white-space:pre;}
+code{
+	white-space:pre;
+	background-color: #F8F8F8;
+	border: 1px solid #DDD;
+	font-size: 13px;
+	line-height: 19px;
+	overflow: auto;
+	padding: 6px 10px;
+	border-radius: 3px;
+}
 pre,code,tt{font:12px 'andale mono', 'lucida console', monospace;line-height:1.5}
+
+blockquote, q {
+quotes: none;
+}
+blockquote {
+border-left: 4px solid #DDD;
+padding: 0 15px;
+color: #777;
+background-color:#eeeeee;
+}
+
+.post p, .post blockquote, .post ul, .post ol, .post dl, .post table, .post pre {
+margin: 15px 0;
+}
 
 input[type="button"],input[type='submit']{cursor:pointer;}
 button{cursor:pointer;}
@@ -59,6 +82,8 @@ a:hover,a:active{color:#C5000C; text-decoration:underline}
 ::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00;}
 
 #clickload{position:fixed; right:0; bottom:0; display:none;}
+.fl{float:left;}
+.fr{float:right;}
 
 body{
 	background: #E7E7E7 url("../img/bkg.png") 0 0;
@@ -85,16 +110,16 @@ body{
 	.article_list p{font-size:14px;}
 
 #archives{}
-	#archives h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+	#archives h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
 		#archives ul {padding:5px;}
 		#archives ul li{font-size:14px; line-height:1.5em;}
 
 #tags{width:70%; float:left;}
-	#tags h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+	#tags h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
 		#tags ul {padding:5px;}
 		#tags ul li{font-size:14px; line-height:1.5em;}
 	.sec{float:right; width:28%;}
-		.sec h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+		.sec h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
 		.tags_list{padding:10px 0px;}
 
 #footer{font-size:13px; border-top:1px solid #333; padding-top:10px; position:relative;}
