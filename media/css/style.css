@@ -21,11 +21,8 @@ h5{font-size:13px}
 h6{font-size:12px}
 
 h1, h2, h3, h4, h5, h6 {
-font-weight: normal;
-font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-color: #B5E853;
+color: #303030;
 letter-spacing: -0.03em;
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 
@@ -48,8 +45,8 @@ img{-ms-interpolation-mode: bicubic;}
 .clearfix{_height:1%;}
 .clearfix{display:block;}/* End hide from IE-mac */
 
-a:link,a:visited{color: #63C0F5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); text-decoration:none;}
-a:hover,a:active{color:#e66f00; text-decoration:underline}
+a:link,a:visited{color: #D5000D;  text-decoration:none;}
+a:hover,a:active{color:#C5000C; text-decoration:underline}
 
 /**滚动条**/
 ::-webkit-scrollbar{width:12px;height:12px;}
@@ -64,22 +61,25 @@ a:hover,a:active{color:#e66f00; text-decoration:underline}
 #clickload{position:fixed; right:0; bottom:0; display:none;}
 
 body{
-	background: #151515 url("../img/bkg.png") 0 0;
-	color: #EAEAEA;
+	background: #E7E7E7 url("../img/bkg.png") 0 0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	color: #6D6D6D;
 	font: 16px;
 	line-height: 1.5;
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
+.con{padding:10px 0px;}
+
 #wrap {width:960px; margin:0 auto; }
-	#header {padding:10px 0px; border-bottom:1px solid #B5E853;}
-		#header h1 a{color:#B5E853; font-size:36px;}
+	#header {padding:10px 0px; border-bottom:1px solid #868080;}
+		#header h1 a{color:#303030; font-size:36px;}
 	
 	#menu li{float:left; padding-right:20px;}
-		#menu li a{color:#EAEAEA;}
+		#menu li a{color:#303030;}
 
 .article_index{padding-top:10px; padding-bottom:30px;}
-	.article_index h2 {font-size:20px; line-height:30px; border-bottom:1px dashed #B5E853;}
+	.article_index h2 {font-size:20px; line-height:30px; border-bottom:1px dashed #AAA99C;}
 	.article_index .date {font-size:12px; padding:6px 0px;}
 	
 	.article_list p{font-size:14px;}
