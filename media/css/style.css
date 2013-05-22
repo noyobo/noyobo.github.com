@@ -100,7 +100,8 @@ body{
 	#header {padding:10px 0px; border-bottom:1px solid #868080;}
 		#header h1 a{color:#303030; font-size:36px;}
 	
-	#menu li{float:left; padding-right:20px;}
+	#menu ul{padding:0;}
+	#menu li{float:left; padding-right:20px; list-style:none;}
 		#menu li a{color:#303030;}
 
 .article_index{padding-top:10px; padding-bottom:30px;}
@@ -113,6 +114,11 @@ body{
 	#archives h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
 		#archives ul {padding:5px;}
 		#archives ul li{font-size:14px; line-height:1.5em;}
+
+.post{}
+	.post_title{padding:10px 0px;}
+		.post_title h2{border-bottom:1px solid #eeeeee;}
+		.post_title .data{font-size:12px;}
 
 #tags{width:70%; float:left;}
 	#tags h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}

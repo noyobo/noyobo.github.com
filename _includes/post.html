@@ -1,27 +1,30 @@
 		<section id="content">
 			<article class="post">
-			 <div class="date">
-			  <span class="day">{{ page.date | date:"%d" }}</span>
-			  <span class="month">{{ page.date | date:"%b" }}</span>
-			  <span class="year">{{ page.date | date:"%Y" }}</span>
-			 </div>
-			 <header>
-			  <h2><a href="{{ site.url }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
-			 </header>
-			 <div class="con">{{ content }}</div>
-			 <div class="prev_and_next clearfix">
-				{% if page.previous %}
-				<div class="fl"><strong>上一篇： <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></strong></div>
-				{% else %}
-				<div class="fl"><strong>上一篇： 已经没有啦 ( ^_^ )/~~</strong></div>
-				{% endif %}
-				{% if page.next %}
-				<div class="fr"><strong>下一篇： <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></strong></div>
-				{% else %}
-				<div class="fr"><strong>下一篇： 敬请期待哦 (*^__^*) </strong></div>
-				{% endif %}
-			 </div>
-			 <div class="postunder"><div id="comments">{% include comments.html %}</div></div>
+				<div class="post_title">
+					<header>
+						<h2><a href="{{ site.url }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					 </header>
+					 <div class="date">
+						<a href="{{ site.author.site }}" title="{{ site.author.name }}">{{ site.author.name }}</a> 发表于 
+						<span class="day">{{ page.date | date:"%d" }}</span>
+						<span class="month">{{ page.date | date:"%b" }}</span>
+						<span class="year">{{ page.date | date:"%Y" }}</span>
+					 </div>
+				</div>
+				<div class="con">{{ content }}</div>
+				<div class="prev_and_next clearfix">
+					{% if page.previous %}
+					<div class="fl"><strong>上一篇： <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></strong></div>
+					{% else %}
+					<div class="fl"><strong>上一篇： 已经没有啦 ( ^_^ )/~~</strong></div>
+					{% endif %}
+					{% if page.next %}
+					<div class="fr"><strong>下一篇： <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></strong></div>
+					{% else %}
+					<div class="fr"><strong>下一篇： 敬请期待哦 (*^__^*) </strong></div>
+					{% endif %}
+				 </div>
+				 <div class="postunder"><div id="comments">{% include comments.html %}</div></div>
 			</article>
 		</section>
 		<div class="clear"></div>
