@@ -61,6 +61,7 @@ embed { display:inline; margin:0; padding:0; }
 #bottombar { height:120px; margin-top:-200px; }
 #header { position:relative; margin:40px 20px 0 20px; padding:0 0 20px 0; border-bottom:1px solid #ddd; height:46px; }
 #blog_title { float:left; }
+#header #blog_title h1 {font-weight:normal}
 #header #blog_title h1 a { font-size:52px; color:#40aa52; height:55px; overflow:hidden; display:block; line-height:52px; font-family:impact, 'Microsoft Yahei'; }
 #header #blog_title h1 b { background:#40aa52; color:white; font-style:normal; font-weight:500; }
 .subtitle { margin-left:22px; }
