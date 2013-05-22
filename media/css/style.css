@@ -19,6 +19,16 @@ h3{font-size:14px}
 h4{font-size:14px}
 h5{font-size:12px}
 h6{font-size:12px}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+color: #B5E853;
+letter-spacing: -0.03em;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+
 q:before,q:after{content:''}
 abbr,acronym{border:0}
 hr {margin: 0;padding: 0;border: 0;color: #CDCDCD;background-color: #CDCDCD;height: 1px}
@@ -78,6 +88,14 @@ body{
 	#archives h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
 		#archives ul {padding:5px;}
 		#archives ul li{font-size:14px; line-height:1.5em;}
+
+#tags{width:70%; float:left;}
+	#tags h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+		#tags ul {padding:5px;}
+		#tags ul li{font-size:14px; line-height:1.5em;}
+	.sec{float:right; width:28%;}
+		.sec h2{border-bottom:1px dashed #B5E853; padding:10px 0px; font-size:20px;}
+		.tags_list{padding:10px 0px;}
 
 #footer{font-size:13px; border-top:1px solid #333; padding-top:10px; position:relative;}
 	#copyright{text-align:center;}
