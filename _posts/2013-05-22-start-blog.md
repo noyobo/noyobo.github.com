@@ -7,8 +7,6 @@ tags: blog
 Markdown 语法基础文件
 ============
 
-2013年5月22日 14:32:38
-
 #这是H1标题
 ##这是H2标题
 ###这是H3标题
@@ -45,13 +43,21 @@ Markdown 语法基础文件
 
 ```html
 <a href='http://google.com/' data-intro='Hello step one!' data-step='1'></a>
-````
-
-```JavaScript
-	funciton hello(){
-		console.log("world")
-	}
 ```
+
+{% highlight javascript %}
+//start the server
+var Server = require('tiny-lr').Server;
+var server = new Server();
+server.listen(options.port, callback);
+
+//notify the server to reload
+server.changed({
+  body: {
+    files: files
+  }
+});
+{% endhighlight %}
 
 **列表**
 *   Red
