@@ -1,4 +1,4 @@
 noyobo.github.com
 =================
 
-http://www.noyobo.com
+noyobo.github.com
