@@ -114,7 +114,7 @@ body{
 
 #archives{}
 	#archives h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
-		#archives ul {padding:5px;}
+		#archives ul {padding:5px 5px 5px 20px;}
 		#archives ul li{font-size:14px; line-height:1.5em;}
 
 .post{}
@@ -124,7 +124,7 @@ body{
 
 #tags{width:70%; float:left;}
 	#tags h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
-		#tags ul {padding:5px;}
+		#tags ul {padding:5px 5px 5px 20px;}
 		#tags ul li{font-size:14px; line-height:1.5em;}
 	.sec{float:right; width:28%;}
 		.sec h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
