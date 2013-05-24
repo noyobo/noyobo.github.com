@@ -47,11 +47,19 @@ Markdown 语法基础文件
 <a href='http://google.com/' data-intro='Hello step one!' data-step='1'></a>
 ````
 
-```JavaScript
-	funciton hello(){
-		console.log("world")
-	}
-```
+{% highlight javascript %}
+//start the server
+var Server = require('tiny-lr').Server;
+var server = new Server();
+server.listen(options.port, callback);
+
+//notify the server to reload
+server.changed({
+  body: {
+    files: files
+  }
+});
+{% endhighlight %}
 
 **列表**
 *   Red
