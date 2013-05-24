@@ -45,7 +45,7 @@ Markdown 语法基础文件
 
 ```html
 <a href='http://google.com/' data-intro='Hello step one!' data-step='1'></a>
-````
+```
 
 {% highlight javascript %}
 //start the server
