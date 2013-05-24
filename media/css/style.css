@@ -13,18 +13,21 @@ strong, b{ font-weight: bold; }
 
 caption,th{text-align:left}
 h1,h2,h3,h4,h5,h6{font-weight:700;}
-h1{font-size:36px}
-h2{font-size:24px}
-h3{font-size:18px}
-h4{font-size:16px}
-h5{font-size:13px}
-h6{font-size:12px}
+h1{font-size:250%}
+h2{font-size:200%}
+h3{font-size:150%}
+h4{font-size:120%}
+h5{font-size:110%}
+h6{font-size:100%}
 
 h1, h2, h3, h4, h5, h6 {
 color: #303030;
-letter-spacing: -0.03em;
+padding:0.5em 0px;
 }
 
+h1,h2{
+	border-bottom:1px solid #cfcfcf;
+}
 
 q:before,q:after{content:''}
 q:lang(zh), q:lang(ja) {
@@ -40,12 +43,12 @@ code{
 	background-color: #F8F8F8;
 	border: 1px solid #DDD;
 	font-size: 13px;
-	line-height: 19px;
+	line-height: 18px;
 	overflow: auto;
-	padding: 6px 10px;
-	border-radius: 3px;
+	padding:3px 6px;
+	border-radius:3px;
 }
-pre,code,tt{font:12px 'andale mono', 'lucida console', monospace;line-height:1.5}
+pre,code,tt{font:1em 'andale mono', 'lucida console', monospace;line-height:1.5}
 
 blockquote, q {
 quotes: none;
@@ -127,8 +130,8 @@ body{
 
 .post{}
 	.post_title{padding:10px 0px;}
-		.post_title h2{border-bottom:1px dashed #AAA99C;}
-		.post_title .date{font-size:12px;}
+		.post_title h1{border-bottom:1px dashed #AAA99C; padding:10px 0px;}
+		.post_title .date{font-size:12px; padding:5px 0px;}
 
 #tags{width:70%; float:left;}
 	#tags h2{border-bottom:1px dashed #AAA99C; padding:10px 0px; font-size:20px;}
