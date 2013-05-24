@@ -27,6 +27,9 @@ letter-spacing: -0.03em;
 
 
 q:before,q:after{content:''}
+q:lang(zh), q:lang(ja) {
+quotes: '「' '」' '『' '』' '「' '」' '『' '』' '「' '」' '『' '』';
+}
 abbr,acronym{border:0}
 hr {margin: 0;padding: 0;border: 0;color: #CDCDCD;background-color: #CDCDCD;height: 1px}
 blockquote{color:#666;font-style:italic;}
@@ -51,8 +54,13 @@ blockquote {
 border-left: 4px solid #DDD;
 padding: 0 15px;
 color: #777;
-background-color:#eeeeee;
+background-color:#ffffff;
 overflow: hidden;
+}
+
+.content{
+	padding:0px 10px 10px;
+	background-color:#eeeeee;
 }
 
 .post p, .post blockquote, .post ul, .post ol, .post dl, .post table, .post pre {
