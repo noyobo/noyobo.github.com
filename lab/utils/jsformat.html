@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JS链接格式化工具</title>
+<style>
+	pre{
+		word-break: break-all;
+		word-wrap: break-word;
+		border:1px solid #eee;
+		padding:3px;
+	}
+	label{cursor:pointer;}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+function matchLinks(str){
+	var reg = /(?:src=\"\s*)([^\"]+)\"/gmi;
+	var links = str.match(reg);
+	if(!links) return false;
+	var result = [];
+	for(var i=0,l=links.length; i<l; i++){
+		var s = links[i];
+		//var r = s.match(/(?:\")(([^\"]*)css)/)[1];
+		var r = s.match(/(?:\")(?:(?:http|https)\:\/\/\w+(?:\.\w+)+\/(?:\?\?)?)?(([^"\?]*)js)/)[1];
+			r = r.replace("{$smarty.const.MISC_ROOT}","")
+		if(r.indexOf("/") == 0){
+			r = r.substr(1);
+		}
+		if(r.indexOf(",") == -1){
+			result.push(r)
+		}else{
+			var r2 = r.split(",");
+			Array.prototype.push.apply(result, r2);
+		}
+	}
+	return result;
+}
+
+
+function cssLinks(str) {
+	var links = matchLinks(str);
+	var html = "";
+	var fix = $("input[name='fix']:checked").val();
+	var time = new Date().getTime();
+	for(var i=0,max = links.length; i < max; i++ ){
+		var js = links[i];
+		html += '\<script type="text/javascript" src="{fix}{link}?v={time}"\>\</script\>\n'.replace(/{link}/, js)
+		html = html.replace(/{fix}/,fix)
+		html = html.replace(/{time}/,time)
+	}
+	
+	return html;
+}
+
+function cssLinks2(str) {
+	var links = matchLinks(str);
+	var html = "";
+	var fix = $("input[name='fix']:checked").val();
+	var time = new Date().getTime();
+	for(var i=0,max = links.length; i < max; i++ ){
+		var js = links[i];
+		html += '{link js="{fix}{link}"}\n'.replace(/{link}/, js)
+		html = html.replace(/{fix}/,fix)
+		html = html.replace(/{time}/,time)
+	}
+	
+	return html;
+}
+function cssLinks3(str) {
+	var links = matchLinks(str);
+	var html = "";
+	var fix = $("input[name='fix']:checked").val();
+	var time = new Date().getTime();
+	for(var i=0,max = links.length; i < max; i++ ){
+		var js = links[i];
+		html += '{extra js="{fix}{link}"}\n'.replace(/{link}/, js)
+		html = html.replace(/{fix}/,fix)
+		html = html.replace(/{time}/,time)
+	}
+	
+	return html;
+}
+function cssLinks4(str) {
+	var links = matchLinks(str);
+	var html = "";
+	var fix = $("input[name='fix']:checked").val();
+	var time = new Date().getTime();
+	
+	while (links.length > 10){
+		var linksRec = links.splice(0, 10)
+		var linksRecHmtl = linksRec.join(",");
+		if(fix == ""){
+			html += '{link js="' + linksRecHmtl + '"}\n'
+		}else{
+			html += '{link js="'+ fix + '??' + linksRecHmtl + '"}\n'
+		}
+	}
+	if(links.length > 0){
+		var linksRecHmtl = links.join(",");
+		if(fix == ""){
+			html += '{link js="' + linksRecHmtl + '"}\n'
+		}else{
+			html += '{link js="'+ fix + '??' + linksRecHmtl + '"}\n'
+		}
+	}
+	return html;
+}
+function cssLinks5(str) {
+	var links = matchLinks(str);
+	var html = "";
+	var fix = $("input[name='fix']:checked").val();
+	var time = new Date().getTime();
+	
+	while (links.length > 10){
+		var linksRec = links.splice(0, 10)
+		var linksRecHmtl = linksRec.join(",");
+		if(fix == ""){
+			html += '{extra js="' + linksRecHmtl + '"}\n'
+		}else{
+			html += '{extra js="'+ fix + '??' + linksRecHmtl + '"}\n'
+		}
+	}
+	if(links.length > 0){
+		var linksRecHmtl = links.join(",");
+		if(fix == ""){
+			html += '{extra js="' + linksRecHmtl + '"}\n'
+		}else{
+			html += '{extra js="'+ fix + '??' + linksRecHmtl + '"}\n'
+		}
+	}
+	return html;
+}
+
+$(document).ready(function() {
+	$("#convert").click(function() {
+		var vOrignalVal = $("#htmlcodes").val();
+		var vResult = cssLinks(vOrignalVal);
+		$("#result").html("<xmp>" + vResult + "</xmp>");
+	});
+	$("#linkcss").click(function() {
+		var vOrignalVal = $("#htmlcodes").val();
+		var vResult = cssLinks2(vOrignalVal);
+		$("#result").html("<xmp>" + vResult + "</xmp>");
+	});
+	$("#extracss").click(function() {
+		var vOrignalVal = $("#htmlcodes").val();
+		var vResult = cssLinks3(vOrignalVal);
+		$("#result").html("<xmp>" + vResult + "</xmp>");
+	});
+	$("#mergeLink").click(function() {
+		var vOrignalVal = $("#htmlcodes").val();
+		var vResult = cssLinks4(vOrignalVal);
+		$("#result").html("" + vResult + "");
+	});
+	$("#mergeExtra").click(function() {
+		var vOrignalVal = $("#htmlcodes").val();
+		var vResult = cssLinks5(vOrignalVal);
+		$("#result").html("" + vResult + "");
+	});
+	$("#reset").click(function(){
+		$("#htmlcodes").html("");
+	})
+});
+
+</script>
+</head>
+<body>
+<div id="content">
+	<h1>JS格式化</h1>
+		<form method="POST">
+			<textarea id="htmlcodes" cols ="150" rows = "10"></textarea>
+			<hr/>
+			<label><input type="radio" value="" checked="checked" name="fix" />当前目录</label>
+			<label><input type="radio" value="http://dev.xiami.com/" name="fix" />http://dev.xiami.com/</label>
+			<label><input type="radio" value="http://st.local.xiami.com/" name="fix" />http://st.local.xiami.com/</label>
+			<label><input type="radio" value="http://st.xiami.com/" name="fix" />http://st.xiami.com/</label>
+			<label><input type="radio" value="{$smarty.const.MISC_ROOT}" name="fix" />{$smarty.const.MISC_ROOT}</label>
+			<hr/>
+			<input type="button" id="convert" value="格式化">
+			<input type="button" id="linkcss" value="{link js}">
+			<input type="button" id="extracss" value="{extra js}">
+			<input type="button" id="mergeLink" value="Link合并">
+			<input type="button" id="mergeExtra" value="Extra合并">
+			<input type="reset" id="reset" value="清空">
+		</form>
+		<hr/>
+		输出:
+		<pre cols ="70" rows = "10"><code id="result" ></code></pre>
+	</div>
+ </body>
+</html>
