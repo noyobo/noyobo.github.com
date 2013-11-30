@@ -2,7 +2,7 @@
 permalink: :title.html
 url: http://www.noyobo.com
 #url: http://localhost:4000
-lsi: false
+lsi: true
 gsl: true
 pygments: true
 safe: true
@@ -36,4 +36,4 @@ seo:
 config:
   js_dir:
   img_dir:
-  css_dir: 
+  css_dir:
