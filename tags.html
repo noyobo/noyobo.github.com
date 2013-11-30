@@ -22,8 +22,8 @@ tags: true
 <aside class="sec">
 <h2>tags</h2>
 <div class="tags_list">
-{% for tag in site.tags %}
-	<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+{% for tag in site.tags %}	
+	<a href="/tags/{{ tag | first }}/" title="view all posts">{{ tag | first }} ( {{ tag | last | size }} )</a>
 {% endfor %}
 </div>
 </aside>
