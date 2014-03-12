@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用github 建立博客
-tags: blog
+tags: blog javascript
 ---
 
 Markdown 语法基础文件

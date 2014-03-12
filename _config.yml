@@ -1,14 +1,7 @@
-﻿markdown: rdiscount
-permalink: :title.html
-url: http://www.noyobo.com
-lsi: true
 pygments: true
-safe: true
-auto: true
 
 # presonal config
 title: noyobo's Blog (大宝)
-feed: http://feed.noyobo.com
 comments: duoshuo
 
 author:
@@ -16,11 +9,3 @@ author:
   nickname: noyobo
   email: noyobo@gmail.com
   site: http://www.noyobo.com
-
-seo: 
-  keyword: 
-  description: 
-config:
-  js_dir:
-  img_dir:
-  css_dir:
