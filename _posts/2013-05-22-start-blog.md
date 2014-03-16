@@ -45,7 +45,7 @@ Markdown 语法基础文件
 <a href='http://google.com/' data-intro='Hello step one!' data-step='1'></a>
 ```
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 //start the server
 var Server = require('tiny-lr').Server;
 var server = new Server();

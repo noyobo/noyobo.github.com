@@ -9,7 +9,7 @@ tags: javascript
 
 就可以解决此问题了.
 
-{% highlight javascript %}
+```javascript
 prefix=${APPDATA}\npm
 registry=http://registry.cnpmjs.org
-{% endhighlight %}
+```
