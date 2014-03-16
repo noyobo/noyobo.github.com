@@ -67,7 +67,14 @@ pre > code {
   border-radius: .25em;
   vertical-align: 2px;
 }
-
+.highlight .lineno {
+  -apple-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
