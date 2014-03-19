@@ -16,7 +16,7 @@ microsoft 对 ActiveXObject 兼容的解释: http://msdn.microsoft.com/zh-cn/lib
 
 可是实际情况是什么呢?
 
-在IE11浏览器下 点击[demo](http://jsfiddle.net/noyobo/hEPb7/9/)查看
+在IE11浏览器下 点击[demo](http://jsfiddle.net/noyobo/hEPb7/11/)查看
 
 当你电脑环境安装的是
 
