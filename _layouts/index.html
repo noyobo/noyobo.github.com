@@ -1,64 +1,76 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
-
     <title>{{ page.title }}</title>
-    <meta name="description" content="">
-
+    <meta name="Author" content="{{ site.author.name }}">
+    <meta name="Keywords" content="{{ page.keywords }}">
+    <meta name="Description" content="{{ page.desc }}">
     <link rel="stylesheet" type="text/css" href="/build/css/style-min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <aside id="sidebar">
-      <nav id="tags">
-        <a href="/index.html" id="avatar"></a>
+        <nav id="tags">
+            <a href="/index.html" id="avatar"></a>
 
-        <ul id="tags__ul">
-          <li class="tags__li tags-btn active" data-tag="pl__all">全部文章</li>
-          <li class="tags__li tags-btn" data-tag="blog">杂谈</li>
-          <li class="tags__li tags-btn" data-tag="javascript">javascript</li>
-          <li class="tags__li tags-btn" data-tag="css">css</li>
-        </ul>
+            <ul id="tags__ul">
+                <li class="tags__li tags-btn active" data-tag="pl__all">全部文章</li>
+                <li class="tags__li tags-btn" data-tag="blog">杂谈</li>
+                <li class="tags__li tags-btn" data-tag="javascript">javascript</li>
+                <li class="tags__li tags-btn" data-tag="css">css</li>
+            </ul>
 
-        <div id="tags__bottom">
-          <a href="mailto:{{ site.author.email }}" id="icon-email" class="tags-btn fontello"></a>
-          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
-        </div>
-      </nav> <!-- end #tags -->
-
-      <div id="posts-list">
-        <form action="" id="search-form">
-          <a href="/index.html" id="mobile-avatar"></a>
-          <!-- NOTE: input field is disabled by default -->
-          <input id="search-input" type="text" placeholder="Search..." disabled >
-        </form>
-
-        <nav id="pl__container">
-        {% for post in site.posts %}
-
-          <a class="{% for tag in post.tags %}{{ tag }} {% endfor %}pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
-        {% endfor %}
+            <div id="tags__bottom">
+                <a href="mailto:{{ site.author.email }}" id="icon-email" class="tags-btn fontello"></a>
+                <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+            </div>
         </nav>
-      </div> <!-- end #posts-list -->
-    </aside> <!-- end #sidebar -->
+        <!-- end #tags -->
+
+        <div id="posts-list">
+            <form action="" id="search-form">
+                <a href="/index.html" id="mobile-avatar"></a>
+                <!-- NOTE: input field is disabled by default -->
+                <input id="search-input" type="text" placeholder="Search..." disabled>
+            </form>
+
+            <nav id="pl__container">
+                {% for post in site.posts %}
+
+                <a class="{% for tag in post.tags %}{{ tag }} {% endfor %}pl__all" href="{{ post.url }}">
+                    <span class="pl__circle"></span>
+                    <span class="pl__title">{{ post.title }}</span>
+                    <span class="pl__date">{{ post.date | date: "%b %Y" }}</span>
+                </a>
+                {% endfor %}
+            </nav>
+        </div>
+        <!-- end #posts-list -->
+    </aside>
+    <!-- end #sidebar -->
 
     <div id="post">
-      <div id="pjax">
-        {{ content }}
-      </div> <!-- end #pjax -->
-
-      <div id="post__toc-trigger">
-        <div id="post__toc">
-          <span id="post__toc-title">Table of Contents</span>
-          <ul id="post__toc-ul"></ul>
+        <div id="pjax">
+            {{ content }}
         </div>
-      </div>
-    </div> <!-- end #post -->
+        <!-- end #pjax -->
 
-    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+        <div id="post__toc-trigger">
+            <div id="post__toc">
+                <span id="post__toc-title">Table of Contents</span>
+                <ul id="post__toc-ul"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- end #post -->
+
+    <button id="js-fullscreen">
+        <span id="icon-arrow" class="fontello"></span>
+    </button>
 
     <script src="/build/js/jquery-2.0.3-min.js"></script>
     <script src="/build/js/jquery-pjax-min.js"></script>
@@ -68,5 +80,6 @@
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fabc83ae4886a46d6e14d29f42ccb60dc' type='text/javascript'%3E%3C/script%3E"));
     </script>
-  </body>
+</body>
+
 </html>
