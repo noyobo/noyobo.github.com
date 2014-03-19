@@ -9,7 +9,7 @@ desc: IE11浏览器 Adebo Flash Player 11 ActiveX 检测安装
 最近在做的一个项目中.要使用到动态插入 swf 节点. 用到 [swfObject](https://github.com/swfobject/swfobject)  [kissy](http://docs.kissyui.com/)
 
 microsoft 对 ActiveXObject 兼容的解释:
-http://msdn.microsoft.com/zh-cn/library/ie/dn423948(v=vs.85).aspx
+[dn423948(v=vs.85](http://msdn.microsoft.com/zh-cn/library/ie/dn423948(v=vs.85).aspx)
 
 >从 IE11 开始，navigator 对象支持 plugins 和 mimeTypes 属性。 此外，window.ActiveXObject 属性从 DOM 中隐藏。 （这意味着你不能再使用该属性检测 IE11。）
 
