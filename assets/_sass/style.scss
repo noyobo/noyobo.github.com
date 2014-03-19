@@ -35,11 +35,12 @@ $pl-active-fg:    darken($green, 5%);
 
 $post-fg:         #2C353D;
 $post-bg:         #fff;
-$post-link:       $grey;
+$post-link:       #4183c4;
 $post-hover:      $green;
 
 $img-bd:          $border;
 $blockquote-bd:   $border;
+$blockquote-co:   #777;
 
 $inline-code-bd:  $border;
 $inline-code-fg:  #000;
@@ -571,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
     color: $post-link;
     word-break: break-all;
     &:hover {
-      // color: $post-hover;
+      color: $post-hover;
       text-decoration: underline;
     }
   }
@@ -589,6 +590,8 @@ blockquote {
   margin: 1.5em 0 1.5em 2em;
   padding-left: .5em;
   border-left: 5px solid $blockquote-bd;
+  color : $blockquote-co;
+  font-size: 80%;
 }
 kbd {
   padding: .2em .3em .1em;

@@ -414,9 +414,10 @@ h1, h2, h3, h4, h5, h6 {
 #post__content li > p {
   margin: 0; }
 #post__content a {
-  color: #7D8B99;
+  color: #4183c4;
   word-break: break-all; }
   #post__content a:hover {
+    color: #2EB695;
     text-decoration: underline; }
 #post__content img {
   max-width: 100%;
@@ -430,7 +431,9 @@ strong {
 blockquote {
   margin: 1.5em 0 1.5em 2em;
   padding-left: 0.5em;
-  border-left: 5px solid #e5e8ec; }
+  border-left: 5px solid #e5e8ec;
+  color: #777;
+  font-size: 80%; }
 
 kbd {
   padding: 0.2em 0.3em 0.1em;
@@ -510,7 +513,7 @@ iframe {
   line-height: 1.6; }
 
 .post__toc-li {
-  color: #7D8B99;
+  color: #4183c4;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: block;
@@ -1029,7 +1032,8 @@ pre > code {
 
 /* Comment.Preproc */
 .highlight .c1 {
-  color: #586E75; }
+  color: #586E75;
+  font-style: italic; }
 
 /* Comment.Single */
 .highlight .cs {
