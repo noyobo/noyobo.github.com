@@ -111,11 +111,21 @@ a {
   overflow: hidden;
   display: block; }
   #avatar:hover {
-    -webkit-animation: spin 0.35s linear infinite;
-    -moz-animation: spin 0.35s linear infinite;
-    -ms-animation: spin 0.35s linear infinite;
-    -o-animation: spin 0.35s linear infinite;
-    animation: spin 0.35s linear infinite; }
+    -webkit-animation: avatar 0.8s ease-out infinite normal none;
+    -moz-animation: avatar 0.8s ease-out infinite normal none;
+    -ms-animation: avatar 0.8s ease-out infinite normal none;
+    -o-animation: avatar 0.8s ease-out infinite normal none;
+    animation: avatar 0.8s ease-out infinite normal none;
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin: center center;
+    -moz-backface-visibility: visible;
+    -moz-transform-origin: center center;
+    -ms-backface-visibility: visible;
+    -ms-transform-origin: center center;
+    -o-backface-visibility: visible;
+    -o-transform-origin: center center;
+    backface-visibility: visible;
+    transform-origin: center center; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #avatar {
       background: url(../img/avatar@2X.png);
@@ -887,6 +897,22 @@ iframe {
 
   to {
     transform: rotate(359deg); } }
+
+@-webkit-keyframes avatar {
+  0% {
+    -webkit-transform: scaleX(1) scaleY(1); }
+
+  20% {
+    -webkit-transform: scaleX(1.1) scaleY(1.1); }
+
+  40% {
+    -webkit-transform: scaleX(1) scaleY(1); }
+
+  65% {
+    -webkit-transform: scaleX(1.2) scaleY(1.2); }
+
+  100% {
+    -webkit-transform: scaleX(1) scaleY(1); } }
 
 /* Make clicks pass-through */
 /* Modified by Peiwen Lu @ 06 Nov 2013 */

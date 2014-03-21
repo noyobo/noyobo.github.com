@@ -201,4 +201,19 @@
   }
 }
 
-
+@-webkit-keyframes avatar{
+  0%{
+  -webkit-transform:scaleX(1) scaleY(1);
+  } 
+  20%{
+  -webkit-transform:scaleX(1.1) scaleY(1.1);
+  } 
+  40%{
+  -webkit-transform:scaleX(1) scaleY(1);
+  } 
+  65%{
+  -webkit-transform:scaleX(1.2) scaleY(1.2);
+  } 100%{
+  -webkit-transform:scaleX(1) scaleY(1);
+  } 
+}
