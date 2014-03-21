@@ -207,26 +207,29 @@ function afterPjax() {
      * Lazy loading duoshuo
      * http://dev.duoshuo.com/docs/50b344447f32d30066000147
      */
-    !!timer && clearTimeout(timer);
-    timer = setTimeout(function(){
+    !! timer && clearTimeout(timer);
+    timer = setTimeout(function() {
         // ds_loaded = true;
         toggleDuoshuoComments("#ds_wrap");
     }, 300);
     //container.scroll(check);
     /**********************/
-};afterPjax();
-function toggleDuoshuoComments(container){
-    var url = window.location.pathname, id;
-    if(url == "/index.html" || url == "/" || url == ""){
+};
+afterPjax();
+
+function toggleDuoshuoComments(container) {
+    var url = window.location.pathname,
+        id;
+    if (url == "/index.html" || url == "/" || url == "") {
         id = 0
         url = "/index.html";
-    }else{
+    } else {
         id = url.match(/\d+/g).join('');
     }
-    var el = document.createElement('div');//该div不需要设置class="ds-thread"
-    el.setAttribute('data-thread-key', id );//必选参数
-    el.setAttribute('data-url', url );//必选参数
-    el.setAttribute('data-author-key', 'noyobo');//可选参数
+    var el = document.createElement('div'); //该div不需要设置class="ds-thread"
+    el.setAttribute('data-thread-key', id); //必选参数
+    el.setAttribute('data-url', url); //必选参数
+    el.setAttribute('data-author-key', 'noyobo'); //可选参数
     DUOSHUO.EmbedThread(el);
     jQuery(container).append(el);
 };
