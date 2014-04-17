@@ -453,6 +453,7 @@ a {
   padding: 4px 80px 3px 8px;
   border-radius: 4px;
   display: block;
+  text-overflow: ellipsis; white-space: nowrap; overflow:hidden;
   &:hover {
     background: $pl-hover-bg;
   }
@@ -466,7 +467,6 @@ a {
     color: $pl-active-fg;
     background: $pl-hover-bg;
     box-shadow: -1px 1px transparentize($border, 0.1);
-    white-space: nowrap; 
     > .pl__circle {
       background: $pl-hover-bg;
       border-color: $pl-active-fg;
