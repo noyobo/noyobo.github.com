@@ -316,7 +316,7 @@ a {
 
 .pl__all {
   margin: 4px 12px;
-  padding: 4px 8px 3px;
+  padding: 4px 80px 3px 8px;
   border-radius: 4px;
   display: block; }
   .pl__all:hover {
@@ -328,7 +328,8 @@ a {
   .pl__all.active {
     color: #29a283;
     background: rgba(242, 242, 242, 0.5);
-    box-shadow: -1px 1px rgba(229, 232, 236, 0.9); }
+    box-shadow: -1px 1px rgba(229, 232, 236, 0.9);
+    white-space: nowrap; }
     .pl__all.active > .pl__circle {
       background: rgba(242, 242, 242, 0.5);
       border-color: #29a283; }
@@ -354,7 +355,8 @@ a {
 .pl__date {
   color: #9aa5af;
   font-size: 14px;
-  float: right; }
+  position: absolute;
+  right: 10px; }
 
 /*---------------------------------*\
    Post

@@ -450,7 +450,7 @@ a {
 
 .pl__all {
   margin: 4px 12px;
-  padding: 4px 8px 3px;
+  padding: 4px 80px 3px 8px;
   border-radius: 4px;
   display: block;
   &:hover {
@@ -466,6 +466,7 @@ a {
     color: $pl-active-fg;
     background: $pl-hover-bg;
     box-shadow: -1px 1px transparentize($border, 0.1);
+    white-space: nowrap; 
     > .pl__circle {
       background: $pl-hover-bg;
       border-color: $pl-active-fg;
@@ -493,7 +494,8 @@ a {
 .pl__date {
   color: lighten($pl-link-fg, 20%);
   font-size: 14px;
-  float: right;
+  position: absolute;
+  right: 10px;
 }
 
 /*---------------------------------*\
