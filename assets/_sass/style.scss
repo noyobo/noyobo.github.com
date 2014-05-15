@@ -450,9 +450,10 @@ a {
 
 .pl__all {
   margin: 4px 12px;
-  padding: 4px 8px 3px;
+  padding: 4px 80px 3px 8px;
   border-radius: 4px;
   display: block;
+  text-overflow: ellipsis; white-space: nowrap; overflow:hidden;
   &:hover {
     background: $pl-hover-bg;
   }
@@ -493,7 +494,8 @@ a {
 .pl__date {
   color: lighten($pl-link-fg, 20%);
   font-size: 14px;
-  float: right;
+  position: absolute;
+  right: 10px;
 }
 
 /*---------------------------------*\

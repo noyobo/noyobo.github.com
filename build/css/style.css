@@ -316,9 +316,12 @@ a {
 
 .pl__all {
   margin: 4px 12px;
-  padding: 4px 8px 3px;
+  padding: 4px 80px 3px 8px;
   border-radius: 4px;
-  display: block; }
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
   .pl__all:hover {
     background: rgba(242, 242, 242, 0.5); }
   .pl__all:visited > .pl__circle {
@@ -354,7 +357,8 @@ a {
 .pl__date {
   color: #9aa5af;
   font-size: 14px;
-  float: right; }
+  position: absolute;
+  right: 10px; }
 
 /*---------------------------------*\
    Post
