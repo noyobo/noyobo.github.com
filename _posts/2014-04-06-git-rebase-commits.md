@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 合并整理 Git commit 
-tags: git
+tags: [git,javascript]
 keywords: git,合并commit,git rebase
 desc: 使用 git 合并多个提交信息,整理不必要的 git commits.
 ---

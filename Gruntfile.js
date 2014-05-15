@@ -84,6 +84,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-sass');
 
     grunt.registerTask('build', '默认构建任务', function() {
