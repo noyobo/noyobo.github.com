@@ -1,0 +1,10 @@
+syntax enable
+set background=dark
+colorscheme solarized
+set number
+set showmatch
+set encoding=utf-8
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set noexpandtab
