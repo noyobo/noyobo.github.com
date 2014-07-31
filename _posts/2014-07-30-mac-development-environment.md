@@ -14,15 +14,15 @@ tags: [mac]
 
  - 安装 brew
 
-    ```
-    $ sudo su
-    $ curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/loca
-    ```
+```
+$ sudo su
+$ curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/loca
+```
  - 安装 sublime text 3
 
-    ```
-    import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-    ```
+```
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+```
 
   - DocBlockr
   - LESS
@@ -31,6 +31,6 @@ tags: [mac]
 
  - subl 命令打开 sublime Text
 
-    ```
-    $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /bin/subl
-    ```
+```
+$ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /bin/subl
+```
