@@ -97,4 +97,4 @@ eventTester("durationchange");	//资源长度改变
 eventTester("volumechange");	//音量改变
 {% endhighlight %}
 
-[转自:http://directguo.com/blog/index.php/2010/07/html5-audio-video-tag/]
+转自:[http://directguo.com/blog/index.php/2010/07/html5-audio-video-tag/](http://directguo.com/blog/index.php/2010/07/html5-audio-video-tag/)

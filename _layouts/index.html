@@ -8,7 +8,7 @@
     <title>{{ page.title }}</title>
     <meta name="Author" content="{{ site.author.name }}">
     <meta name="Keywords" content="{{ page.keywords }}">
-    <meta name="Description" content="{{ page.desc }}">
+    <meta name="Description" content="{{ page.desc}}">
     <link rel="stylesheet" type="text/css" href="/build/css/style-min.css">
 </head>
 
@@ -56,6 +56,18 @@
     <div id="post">
         <div id="pjax">
             {{ content }}
+            <!-- 分享评论模块 -->
+            <div id="post__share">
+                <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://www.noyobo.com{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+                <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+                <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://www.noyobo.com{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+            </div>
+            <!-- end #post__share -->
+
+            {% if site.comments == 'duoshuo' %} {% include duoshuo.html %} {% else %} {% include disqus.html %} {% endif %}
+
+            <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a>
+            </p>
         </div>
         <!-- end #pjax -->
 

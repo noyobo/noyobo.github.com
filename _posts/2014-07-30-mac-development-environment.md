@@ -1,8 +1,8 @@
 ---
-layout: index
-title: 小笔记
-keywords: 'javascript,css3,html5,jekyll'
-desc: 'GuitarScript'
+layout: post
+title: "MAC 装机记录"
+desc: "MAC开发环境搭配, 终端颜色设置"
+tags: [mac]
 ---
 
 ## 实用文章
@@ -34,4 +34,3 @@ desc: 'GuitarScript'
     ```
     $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /bin/subl
     ```
-

@@ -383,6 +383,10 @@ a {
   @media screen and (max-width: 585px) {
     #post {
       font-size: 14px; } }
+  #post a:link, #post a:visited {
+    color: #36c; }
+  #post a:hover {
+    text-decoration: underline; }
 
 #pjax {
   padding: 0 5% 30px; }
@@ -1027,7 +1031,10 @@ pre > code {
   background: #fafafa;
   border: 1px solid #e5e8ec;
   border-radius: 0.25em;
-  vertical-align: 2px; }
+  vertical-align: 2px;
+  white-space: pre;
+  display: block;
+  overflow: auto; }
 
 .highlight .lineno {
   -apple-user-select: none;
