@@ -14,16 +14,16 @@ tags: [mac]
 
 #### 安装 brew
 
-```
+{% highlight javascript %}
 $ sudo su
 $ curl -L http://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C /usr/loca
-```
+{% endhighlight %}
 
 #### 安装 sublime text 3
 
-```
+{% highlight javascript %}
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-```
+{% endhighlight %}
 
 #### 实用插件
 
@@ -34,6 +34,6 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 #### subl 命令打开 sublime Text
 
-```
+{% highlight javascript %}
 $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /bin/subl
-```
+{% endhighlight %}

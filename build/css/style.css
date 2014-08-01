@@ -607,6 +607,8 @@ iframe {
     transition: color 0.35s, box-shadow 0.35s; }
     #post__share > .fontello:hover, #post__share > .post__toc-li:hover:before {
       box-shadow: 0 0 0 2px rgba(125, 139, 153, 0.15); }
+  #post__share a {
+    text-decoration: none; }
 
 #icon-twitter {
   margin-left: -90px; }
@@ -1014,6 +1016,8 @@ pre > code {
   text-align: left;
   white-space: pre;
   word-spacing: normal;
+  vertical-align: 2px;
+  display: block;
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -1031,9 +1035,6 @@ pre > code {
   background: #fafafa;
   border: 1px solid #e5e8ec;
   border-radius: 0.25em;
-  vertical-align: 2px;
-  white-space: pre;
-  display: block;
   overflow: auto; }
 
 .highlight .lineno {

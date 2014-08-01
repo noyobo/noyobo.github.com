@@ -11,7 +11,7 @@ tags: javascript
 
 就可以解决此问题了.
 
-```javascript
+{% highlight javascript %}
 prefix=${APPDATA}\npm
 registry=http://registry.cnpmjs.org
-```
+{% endhighlight %}

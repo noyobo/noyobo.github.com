@@ -8,10 +8,15 @@ Markdown 语法基础文件
 ============
 
 #这是H1标题
+
 ##这是H2标题
+
 ###这是H3标题
+
 ####这是H4标题
+
 #####这是H5标题
+
 ######这是H6标题
 
 **blockquote**
@@ -41,9 +46,9 @@ Markdown 语法基础文件
 
 `标记`行内标记
 
-```html
+{% highlight html linenos %}
 <a href='http://google.com/' data-intro='Hello step one!' data-step='1'></a>
-```
+{% endhighlight %}
 
 {% highlight javascript linenos %}
 //start the server

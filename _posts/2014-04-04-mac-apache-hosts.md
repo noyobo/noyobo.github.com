@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mac apache 设置虚拟主机
-tags: [javascript]
+tags: javascript
 keywords: mac apache
 desc: mac apache 设置虚拟主机
 ---
@@ -17,17 +17,16 @@ desc: mac apache 设置虚拟主机
 
 `$ sudo vi /etc/apache2/httpd.conf`
 
-```
-#Include /private/etc/apache2/extra/httpd-vhosts.conf
-```
-去掉＃ 保存
+`#Include /private/etc/apache2/extra/httpd-vhosts.conf`
+
+去掉# 保存
 
 `$ sudo vi /etc/apache2/extra/httpd-vhosts.conf`
 
 增加虚拟主机记录
 示例：
-```
-<VirtualHost 127.0.0.1:80>
+{% highlight javascript linenos %}
+  <VirtualHost 127.0.0.1:80>
       ServerAdmin noyobo@gmail.com
       DocumentRoot "/Users/xiamibao/home/gitlab"
       ServerName gitlabswf.xiami.com
@@ -40,4 +39,4 @@ desc: mac apache 设置虚拟主机
           Allow from all
       </Directory>
   </VirtualHost>
-```
+{% endhighlight %}
