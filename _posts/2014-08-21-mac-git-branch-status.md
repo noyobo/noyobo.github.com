@@ -26,9 +26,7 @@ Mac 的终端显示很不友好, 用惯了 Window 下的 Github shell 客户端.
 
 通过网上搜索和自己根据实际需要修改的代码如下:
 
-`.bash_profile`
-
-https://gist.github.com/noyobo/968ec2650386b59b4638
+[.bash_profile](https://gist.github.com/noyobo/968ec2650386b59b4638)
 
 {% highlight bash %}
 function parse_git_dirty {
