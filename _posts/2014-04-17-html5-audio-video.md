@@ -3,7 +3,7 @@ layout: post
 title: HTML5 Audio/Video 标签,属性,方法,事件汇总(转)
 tags: [javascript,html5,audio]
 keywords: html5,audio
-desc: HTML5 Audio/Video 标签,属性,方法,事件汇总
+description: HTML5 Audio/Video 标签,属性,方法,事件汇总
 ---
 
 `<audio>` 标签属性：

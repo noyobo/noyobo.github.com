@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "便捷加载 grunt 依赖"
-desc: "快速简介grunt.loadNpmTrasks"
+description: "快速简介grunt.loadNpmTrasks"
 tags: [grunt]
 ---
 

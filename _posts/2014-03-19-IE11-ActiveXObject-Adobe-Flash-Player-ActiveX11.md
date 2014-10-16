@@ -3,7 +3,7 @@ layout: post
 title: IE11获取FlashPlayer Versions 的问题
 tags: javascript
 keywords: IE11,ShockwaveFlash,Flash,ActiveXObject
-desc: IE11浏览器 Adebo Flash Player 11 ActiveX 检测安装
+description: IE11浏览器 Adebo Flash Player 11 ActiveX 检测安装
 ---
 
 最近在做的一个项目中.要使用到动态插入 swf 节点. 用到 [swfObject](https://github.com/swfobject/swfobject)  [kissy](http://docs.kissyui.com/)
@@ -50,7 +50,7 @@ typeof(new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")); //object
 
 ## Adebo Flash Player 12 ActiveX ##
 
-你将看到的结果是 
+你将看到的结果是
 
 {% highlight javascript %}
 12.0.0
@@ -71,7 +71,7 @@ typeof(new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")); //object
 (new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")).GetVariable("$version"); //WIN 12,0,0,77
 {% endhighlight %}
 
-这和官方描述的吻合了. 
+这和官方描述的吻合了.
 
 实际遇到的问题:
 先看看 [swfObject](https://github.com/swfobject/swfobject) 源码里是怎么判断的[#L5](https://github.com/swfobject/swfobject/blob/562fe358216edbb36445aa62f817c1a56252950c/swfobject/src/swfobject.js#L51)
@@ -136,7 +136,7 @@ _getFlashPluginVersion: function() {
 	return version * 1; // Converts to a number
 }
 {% endhighlight %}
-也挂了. 
+也挂了.
 
 再看看 kissy的
 [#L20](https://github.com/kissyteam/kissy/blob/6d0dd81216c17908b6c0bfdc2ea4f6a8717797c7/src/swf/src/swf/ua.js#L20)
@@ -170,7 +170,7 @@ function getFlashVersion() {
 }
 {% endhighlight %}
 ## 结论 ##
-在 IE11 并且 **Adebo Flash Player 11 ActiveX** 的时候. 
+在 IE11 并且 **Adebo Flash Player 11 ActiveX** 的时候.
 
 {% highlight javascript %}
 typeof navigator.plugins["Shockwave Flash"]; //undefined

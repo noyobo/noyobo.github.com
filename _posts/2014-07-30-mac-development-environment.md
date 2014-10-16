@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MAC 装机记录"
-desc: "MAC开发环境搭配, 终端颜色设置"
+description: "MAC开发环境搭配, 终端颜色设置"
 tags: [mac]
 ---
 

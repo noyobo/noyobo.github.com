@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mac bash 显示当前Git分支名与状态"
-desc: "Mac bash显示当前Git分支名与状态,提示用户文件位置与提交情况,仿github客户端提示."
+description: "Mac bash显示当前Git分支名与状态,提示用户文件位置与提交情况,仿github客户端提示."
 tags: [git]
 keywords: bash,git,git_shell
 ---

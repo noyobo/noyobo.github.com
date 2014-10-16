@@ -3,7 +3,7 @@ layout: post
 title: 合并整理 Git commit
 tags: [git]
 keywords: git,合并commit,git rebase
-desc: 使用 git 合并多个提交信息,整理不必要的 git commits.
+description: 使用 git 合并多个提交信息,整理不必要的 git commits.
 ---
 
 最近做项目使用Git管理代码， 常常是`git commit －m` 后 就执行 `git push`，为了在公司和家里都能开发,实时或许最新代码, 导致 branch 看到的 'git log' 都是杂乱无章的。 不利于浏览.

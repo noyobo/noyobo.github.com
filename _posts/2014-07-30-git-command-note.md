@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git常用命令记录
-desc: git更新远程仓库
+description: git更新远程仓库
 keywords: github,git
 tags: [git]
 ---

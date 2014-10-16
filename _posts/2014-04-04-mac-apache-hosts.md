@@ -3,7 +3,7 @@ layout: post
 title: mac apache 设置虚拟主机
 tags: javascript
 keywords: mac apache
-desc: mac apache 设置虚拟主机
+description: mac apache 设置虚拟主机
 ---
 
 `$ sudo vim /etc/hosts.ac`

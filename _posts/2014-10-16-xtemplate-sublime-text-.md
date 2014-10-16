@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Xtemplate Sublime Text 语法高亮及自动完成插件"
-desc: "Xtemplate Sublime Text 语法高亮及自动完成插件"
+description: "Xtemplate Sublime Text 语法高亮及自动完成插件"
 tags: [blog]
 keywords: sublime,xtemplate
 ---
