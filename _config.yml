@@ -1,0 +1,40 @@
+# Site settings
+title: noyobo' Blog
+email: noyobo@gmail.com
+description: "GuiterScript"
+permalink: /:year/:month/:day/:title.html
+baseurl: ""
+url: "http://noyobo.com"
+atom-baseurl: "http://noyobo.com"
+author: "noyobo"
+
+# Build settings
+# permalink: date
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
+
+#duoshuo
+  comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : noyobo
+
+navigations:
+  - title: About
+    class: fa fa-list-ul
+    href: /about/
+  - title: Archive
+    class: fa fa-tags
+    href: /archive/
+  - title: Categories
+    class: fa fa-user
+    href: /categories/
+  - title: Tags
+    class: fa fa-film
+    href: /tags/
+  - title: Rss
+    class: fa fa-rss
+    href: /atom.xml
