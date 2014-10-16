@@ -1,7 +1,25 @@
+.post pre, .post code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;;
+    background-color: #F0F0F0;
+}
+.post .highlight code {
+    font-size: 13px !important;
+}
+.post pre {
+    border: 1px solid #eee;
+    border-left: 10px solid #DCDCE0;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 15px;
+    overflow: auto;
+}
+.post pre code {
+    background-color: transparent !important
+}
+
 /*
-
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
-
  */
 
 .hljs {

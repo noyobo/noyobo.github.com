@@ -11,12 +11,13 @@ author: "noyobo"
 # Build settings
 # permalink: date
 
+#pygments: true
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
 
-#duoshuo
+duoshuo:
   comments :
     provider : duoshuo
     duoshuo :
