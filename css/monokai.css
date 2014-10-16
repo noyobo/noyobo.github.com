@@ -6,7 +6,7 @@ monokai style - ported by Luigi Maselli - http://grigio.org
 .post code {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
-.post code{
+.post :not(pre) > code{
   padding: 0.1em;
   margin: 0;
   font-size: 85%;
