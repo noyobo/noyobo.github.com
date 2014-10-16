@@ -5,8 +5,10 @@ description: "gbm git分支管理工具,释放你的双手,简化你的输入操
 category: npm
 tags: [npm,git]
 ---
+
 gbm
 ===
+
 [![Build Status](https://travis-ci.org/noyobo/gbm.svg)](https://travis-ci.org/noyobo/gbm)
 [![npm version](http://img.shields.io/npm/v/gbm.svg)](https://www.npmjs.org/package/gbm)
 [![npm download](http://img.shields.io/npm/dm/gbm.svg)](https://www.npmjs.org/package/gbm)
@@ -20,7 +22,9 @@ CLI Tool `gbm` Git branch manage to package.json version daily/x.y.z
 ```
 $ npm install -g gbm
 ```
+
 ## Usage
+
 
 ```
   Usage: gbm <commands> [options]
