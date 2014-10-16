@@ -18,9 +18,20 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #7C7C7C; text-decoration: none; }
-a:hover   { color: #000; }
-a:visited { color: #7C7C7C; }
+a         {
+color: #36c;
+text-decoration: none;
+-webkit-transition: color .35s;
+-moz-transition: color .35s;
+-ms-transition: color .35s;
+-o-transition: color .35s;
+transition: color .35s;
+}
+a:hover   {
+    color: #2EB695;
+    text-decoration: underline;
+}
+a:visited { color: #959B9B; }
 
 /* Utility */
 
@@ -230,11 +241,12 @@ a:visited { color: #7C7C7C; }
 }
 
 .post-header h1 {
-    font-size: 1.4em;
+    font-family: Georgia,"Times New Roman",Times,Kai,"Kaiti SC",KaiTi,BiauKai,"楷体","楷体_GB2312",serif;
+    font-size: 2em;
     /*letter-spacing: -1.75px;*/
-    line-height: 1;
+    line-height: 1.6;
     font-weight: bold;
-    color: #333;
+    color: #36c;
 }
 
 .post-header .meta {
@@ -283,7 +295,7 @@ a:visited { color: #7C7C7C; }
 .post-content h1 {
     font-size: 36px;
     border-bottom: 1px solid #DDD;
-    margin:60px 0 40px;
+    margin:30px 0 40px;
 }
 
 .post-content h2 {
@@ -332,7 +344,8 @@ a:visited { color: #7C7C7C; }
 }
 
 .post pre,
-.post  code {
+.post  code
+ {
     font-family:Menlo,Consolas,"Courier New",monospace;
     background-color: #F0F0F0;
 }
