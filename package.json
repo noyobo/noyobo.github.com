@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/noyobo/noyobo.github.com/issues"
   },
-  "homepage": "https://github.com/noyobo/noyobo.github.com"
+  "homepage": "https://github.com/noyobo/noyobo.github.com",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "markdown-creator": "^0.1.5",
+    "yamljs": "^0.2.0"
+  }
 }
