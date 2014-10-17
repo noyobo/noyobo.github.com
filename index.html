@@ -29,7 +29,7 @@ layout: default
         {% for post in site.posts %}
         {% capture m %}{{ post.date | date:"%m"}}{% endcapture %}{% if month != m %}{% break %}{% endif %}
         <li class="listing-item">
-            <time class="fa fa-clock-o" datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+            <time datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%Y-%m-%d" }}</time>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
