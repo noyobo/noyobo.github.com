@@ -334,10 +334,11 @@ a:visited {
 
 @media screen and (max-width: 830px) {
     .wrap {
-        padding: 0;
+        padding: 0 10px;
     }
     .post {
         width: auto;
+        padding: 0 10px;
     }
     .home {
         padding: 0;
