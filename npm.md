@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: /npm
+permalink: /npm/
 ---
 ## My NPM packages
 
