@@ -13,7 +13,10 @@
         padding: 0;
     }
     .site-header {
-        position: inherit;
+        position: inherit !important;
+    }
+    .page-content{
+        padding-top: 20px !important;
     }
     .site-nav {
         position: fixed;
