@@ -1,22 +1,28 @@
-table{
-	border-collapse: collapse;
-	border-spacing: 0;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-.page-content table {
+table {
     display: block;
     width: 100%;
     overflow: auto;
     word-break: normal;
     word-break: keep-all;
 }
-.page-content table tr {
+table th {
+    font-size: 1.5em;
+}
+table tr {
     background-color: #FFF;
     border-top: 1px solid #CCC;
 }
-.page-content table tr:nth-child(2n) {
+table tr:nth-child(2n) {
     background-color: #F8F8F8;
 }
-.page-content table th, .page-content table td {
+table th, table td {
     padding: 6px 13px;
     border: 1px solid #DDD;
+}
+td a{
+	margin: 0 2px;
 }
