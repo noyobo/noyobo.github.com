@@ -9,7 +9,7 @@ var npmTHead = ['Package Name', '']
 var npmTemp = '\
 [![npm version](http://img.shields.io/npm/v/{name}.svg)](https://www.npmjs.org/package/{name})\
 [![npm download](http://img.shields.io/npm/dm/{name}.svg)](https://www.npmjs.org/package/{name})\
-[![npm download](http://img.shields.io/node/v/{name}.svg)](https://www.npmjs.org/package/{name})'
+[![npm engines](http://img.shields.io/node/v/{name}.svg)](https://www.npmjs.org/package/{name})'
 
 gulp.task('npm', function() {
   var yamlData = YAML.load('./lib/npm.yml')
@@ -21,6 +21,5 @@ gulp.task('npm', function() {
     var n = npmTemp.replace(/\{name\}/g, item)
     npmTbody.push([item, n])
   };
-  console.log(npmTbody)
   fs.appendFileSync('npm.md', markdown.table(npmTHead, npmTbody))
 })
