@@ -1,0 +1,64 @@
+/* Post styles */
+/* ----------------------------------------------------------*/
+.post {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.post-header {
+    line-height: 3;
+}
+.post-header h1 {
+    font-family: Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, "楷体", "楷体_GB2312", serif;
+    font-size: 2em;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #36c;
+}
+.post-header .meta {
+    font-size: 13px;
+    color: #818181;
+    font-family: "Georgia", "Ubuntu", monospace;
+}
+.post-header .meta .pre {
+    font-weight: bold;
+    color: #333;
+}
+.post-header .meta a {} .post-content {
+    font-size: 1.1em;
+    margin: 0 0 60px;
+}
+.post-content > * {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.post-content li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.listing li {
+    list-style-type: none;
+}
+.post-content blockquote {
+    font-size: 18px;
+    opacity: .6;
+    letter-spacing: -1px;
+    background-color: #EAEAF0;
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 10px solid #A7A7AF;
+}
+.post-content blockquote p {
+    font-size: 17.5px;
+    font-weight: 300;
+    line-height: 1.25
+}
+.post-content ul,
+.post-content ol {
+    padding-left: 20px;
+}
+.post ul,
+.post ol {
+    margin-left: 1.35em;
+}

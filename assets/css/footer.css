@@ -51,7 +51,8 @@
 .site-footer ul {
     list-style: none;
 }
-.site-footer li, .site-footer p {
+.site-footer li,
+.site-footer p {
     letter-spacing: -.3px;
     color: #B4B4B4;
 }
