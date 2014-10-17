@@ -1,3 +1,7 @@
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 .page-content table {
     display: block;
     width: 100%;
