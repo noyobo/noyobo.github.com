@@ -3,6 +3,8 @@ layout: post
 title: "MAC 装机记录"
 description: "MAC开发环境搭配, 终端颜色设置"
 tags: [mac]
+category: mac
+keywords: mac,brew,安装sublime
 ---
 
 ## 实用文章

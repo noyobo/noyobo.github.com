@@ -2,8 +2,9 @@
 layout: post
 title: "gbm git分支管理工具"
 description: "gbm git分支管理工具,释放你的双手,简化你的输入操作."
-category: npm
+category: git
 tags: [npm,git]
+keywords: git,branch
 ---
 gbm
 ===

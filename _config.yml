@@ -24,18 +24,24 @@ duoshuo:
       short_name : noyobo
 
 navigations:
+  - title: Npm
+    class: fa fa-list-ul
+    href: /Npm
   - title: About
     class: fa fa-list-ul
-    href: /about/
+    href: /about
   - title: Archive
     class: fa fa-tags
-    href: /archive/
+    href: /archive
   - title: Categories
     class: fa fa-user
-    href: /categories/
+    href: /categories
   - title: Tags
     class: fa fa-film
-    href: /tags/
+    href: /tags
   - title: Rss
     class: fa fa-rss
-    href: /atom.xml
+    href: /rss.xml
+  - title: 404
+    class: fa fa-list-ul
+    href: /404

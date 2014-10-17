@@ -4,6 +4,7 @@ title: "Mac bash 显示当前Git分支名与状态"
 description: "Mac bash显示当前Git分支名与状态,提示用户文件位置与提交情况,仿github客户端提示."
 tags: [git]
 keywords: bash,git,git_shell
+category: git
 ---
 
 Mac 的终端显示很不友好, 用惯了 Window 下的 Github shell 客户端. 切换到Mac使用起来不是很习惯

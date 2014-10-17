@@ -4,6 +4,7 @@ title: git常用命令记录
 description: git更新远程仓库
 keywords: github,git
 tags: [git]
+category: git
 ---
 
 ## fork 同步远程仓库

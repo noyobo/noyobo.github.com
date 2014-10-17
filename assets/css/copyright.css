@@ -1,0 +1,55 @@
+
+/* ----------------------------------------------------------*/
+/* Category */
+/* ----------------------------------------------------------*/
+
+.category {
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 80px;
+}
+.category .title a {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    color: #bb2222;
+}
+.category-number {
+    font-size: 15px;
+    margin-bottom: 15px;
+    vertical-align: text-top;
+    color: rgba(170, 165, 165, 0.96);
+    padding-left: 4px;
+}
+.category p {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.category li {
+    list-style-type: none;
+    margin: 0 0 0 35px;
+    line-height: 1.5;
+    font-size: 22px;
+}
+.category .category-date {
+    display: inline-block;
+    font-size: 15px;
+    color: #818181;
+}
+.category a {
+    color: #bb2222;
+    font-size: 19px;
+}
+.category li a {
+    color: #525252;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.category hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #F0E8E8;
+}

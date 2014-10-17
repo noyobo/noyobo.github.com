@@ -3,6 +3,8 @@ layout: post
 title: "便捷加载 grunt 依赖"
 description: "快速简介grunt.loadNpmTrasks"
 tags: [grunt]
+category: grunt
+keywords: grunt,grunt-loadNpmTasks
 ---
 
 

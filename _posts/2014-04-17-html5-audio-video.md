@@ -4,6 +4,7 @@ title: HTML5 Audio/Video 标签,属性,方法,事件汇总(转)
 tags: [javascript,html5,audio]
 keywords: html5,audio
 description: HTML5 Audio/Video 标签,属性,方法,事件汇总
+category: html
 ---
 
 `<audio>` 标签属性：

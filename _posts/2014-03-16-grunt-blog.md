@@ -1,7 +1,10 @@
 ---
 layout: post
 title: 使用Grunt构建项目
+description: 使用Grunt构建项目, Grunt简单配置.
 tags: blog
+category: grunt
+keywords: grunt
 ---
 
 今天花点时间把博客模版更改到使用 grunt 打包静态资源文件。

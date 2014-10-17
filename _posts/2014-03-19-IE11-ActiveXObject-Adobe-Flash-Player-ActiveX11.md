@@ -4,6 +4,7 @@ title: IE11获取FlashPlayer Versions 的问题
 tags: javascript
 keywords: IE11,ShockwaveFlash,Flash,ActiveXObject
 description: IE11浏览器 Adebo Flash Player 11 ActiveX 检测安装
+category: html
 ---
 
 最近在做的一个项目中.要使用到动态插入 swf 节点. 用到 [swfObject](https://github.com/swfobject/swfobject)  [kissy](http://docs.kissyui.com/)

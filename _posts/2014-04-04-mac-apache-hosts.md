@@ -4,6 +4,7 @@ title: mac apache 设置虚拟主机
 tags: javascript
 keywords: mac apache
 description: mac apache 设置虚拟主机
+category: mac
 ---
 
 `$ sudo vim /etc/hosts.ac`

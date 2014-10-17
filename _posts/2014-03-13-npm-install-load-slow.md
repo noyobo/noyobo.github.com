@@ -2,6 +2,8 @@
 layout: post
 title: npm install 安装过程卡住不动
 tags: javascript
+category: npm
+keywords: npm,npm install
 ---
 
 
