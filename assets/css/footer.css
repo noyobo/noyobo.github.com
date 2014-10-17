@@ -2,10 +2,9 @@
 
 .site-footer {
     border-top: 1px solid #e8e8e8;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    position: relative;
-    margin-top: -50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -71px;
     height: 50px;
     clear: both;
     font-size: 14px;
@@ -16,37 +15,9 @@
     letter-spacing: -.5px;
     margin-bottom: 15px;
 }
-.site-footer .column {
-    float: left;
-    margin-bottom: 15px;
-}
-.footer-col-1 {
-    width: 270px;
-    /*fallback*/
-
-    width: -webkit-calc(35% - 10px);
-    width: -moz-calc(35% - 10px);
-    width: -o-calc(35% - 10px);
-    width: calc(35% - 10px);
-    margin-top: 27px;
-}
-.footer-col-1 a {
-    color: #A8A8A8;
-    transition: padding 0.6s;
-    padding-left: 60px;
-}
-.footer-col-1 a:hover {
-    color: #dd1144;
-    text-decoration: none;
-    padding-left: 80px;
-}
-.footer-col-2 {
-    float: right;
-    margin-top: 27px;
-    padding-right: 20px;
-}
-.footer-col-2 a {
-    color: #A8A8A8;
+.fonter-content{
+    text-align: center;
+    line-height: 50px;
 }
 .site-footer ul {
     list-style: none;
@@ -60,12 +31,11 @@
     display: inline-block;
     width: 40px;
     height: 40px;
+    vertical-align: middle;
 }
-.github {
-    position: absolute;
+/*.github {
     transition: transform 0.5s ease-out;
-    top: 33px;
 }
 .github:hover {
     transform: rotateZ(360deg);
-}
+}*/
