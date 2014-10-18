@@ -10,24 +10,26 @@ var fs = require('fs')
 var del = require('del')
 
 var codeName = 'npm.md';
-var npmTHead = ['Package Name', '', '', '', '']
+var npmTHead = ['Package Name', '']
 var npmTemp = '\
-[![npm version](http://img.shields.io/npm/v/{name}.svg)](https://www.npmjs.org/package/{name}),\
-[![npm download](http://img.shields.io/npm/dm/{name}.svg)](https://www.npmjs.org/package/{name}),\
-[![npm engines](http://img.shields.io/node/v/{name}.svg)](https://www.npmjs.org/package/{name}),\
-[![build status](http://img.shields.io/travis/noyobo/{name}.svg)](https://travis-ci.org/noyobo/{name})'
+[![npm version](http://img.shields.io/npm/v/{name}.svg)](https://www.npmjs.org/package/{name}) \
+[![npm download](http://img.shields.io/npm/dm/{name}.svg)](https://www.npmjs.org/package/{name}) \
+[![npm engines](http://img.shields.io/node/v/{name}.svg)](https://www.npmjs.org/package/{name}) \
+[![npm dependencise](https://david-dm.org/{repo}.svg)](https://david-dm.org/{repo}) \
+[![build status](http://img.shields.io/travis/{repo}.svg)](https://travis-ci.org/{repo})'
 
 gulp.task('npm', function() {
-  var yamlData = YAML.load('./lib/npm.yml')
+  var npmArray = YAML.load('./lib/npm.yml').projects;
   fs.writeFileSync(codeName, '---\nlayout: default\ntitle: About\npermalink: /npm/\n---\n')
   fs.appendFileSync(codeName, markdown.title('NPM packages', 2))
   var npmTbody = []
-  for (var i = 0; i < yamlData.length; i++) {
-    var item = yamlData[i];
-    var l = markdown.link(item, 'https://github.com/noyobo/' + item);
-    var n = npmTemp.replace(/\{name\}/g, item).split(',');
-    n.unshift(l)
-    npmTbody.push(n)
+  for (var i = 0; i < npmArray.length; i++) {
+    var item = npmArray[i];
+    var l = markdown.link(item.name, 'https://github.com/' + item.repo);
+    var n = npmTemp.replace(/\{name\}/g, item.name);
+        n = n.replace(/\{repo\}/g, item.repo)
+        // n = n.split(',')
+    npmTbody.push([l, n])
   };
   fs.appendFileSync(codeName, markdown.table(npmTHead, npmTbody));
   // fs.appendFileSync(codeName, fs.readFileSync('./lib/npm-footer.md'));
