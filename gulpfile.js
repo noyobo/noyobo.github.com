@@ -20,7 +20,7 @@ var npmTemp = '\
 
 gulp.task('npm', function() {
   var npmArray = YAML.load('./lib/npm.yml').projects;
-  fs.writeFileSync(codeName, '---\nlayout: default\ntitle: About\npermalink: /npm/\n---\n')
+  fs.writeFileSync(codeName, '---\nlayout: default\ntitle: Npm packages\npermalink: /npm/\n---\n')
   fs.appendFileSync(codeName, markdown.title('NPM packages', 2))
   var npmTbody = []
   for (var i = 0; i < npmArray.length; i++) {

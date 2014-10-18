@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Npm packages
 permalink: /npm/
 ---
 ## NPM packages
