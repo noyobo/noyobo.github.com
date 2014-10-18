@@ -69,6 +69,18 @@ a:visited {
 .page-content .wrap {
     padding-bottom: 50px;
 }
+
+.page-content p, .page-content blockquote{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.page-content blockquote {
+    font-size: 1em;
+    line-height: 1.65em;
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+}
 /* Home styles */
 /* ----------------------------------------------------------*/
 

@@ -6,11 +6,14 @@ permalink: /about/
 
 ## Open Source Project
 
+### Xtemplate sublime text  language syntax
 
-### Xtemplate sublime text  language syntax [![https://sublime.wbond.net/packages/Xtemplate](http://img.shields.io/badge/Xtemplate--sublime--package-ST2/ST3-green.svg)](https://sublime.wbond.net/packages/Xtemplate)
+https://github.com/noyobo/sublime-xtemplate-snippets
 
-> **Xtemplate** Sbulime text 语法插件
+> **Xtemplate** Sbulime text 语法插件 [![https://sublime.wbond.net/packages/Xtemplate](http://img.shields.io/badge/Xtemplate--sublime--package-ST2/ST3-green.svg)](https://sublime.wbond.net/packages/Xtemplate)
 
-### badgeboard [https://github.com/noyobo/badgeboard](https://github.com/noyobo/badgeboard)
+### badgeboard
+
+https://github.com/noyobo/badgeboard
 
 > NPM Packages badge board
