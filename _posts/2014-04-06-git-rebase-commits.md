@@ -24,7 +24,7 @@ category: git
 修改前第三次提交内容
 `$ git rebase -i HEAD~3` 得到
 
-```javascript
+```bash
 pick 5eef5f7 index.html 模板文件修改 index.html
 pick a3285df Create 2014-04-04-mac-apache-hosts.md
 pick f69e8d8 add category git 增加文章 git 分类
@@ -49,7 +49,7 @@ pick f69e8d8 add category git 增加文章 git 分类
 
 看 Commands 的解释
 
-```javascript
+```bash
 p, pick 使用这条 commit
 r, reword 使用这条 commit 但是要修改 commit message
 e, edit 使用这条 commit 但是要修改 commit messaage // 这里和 reword 使用方法一样, 但 reword 在 :wq 后会直接让你进入修改编辑, edit :wq 后要再使用 git commit --amend 进入修改

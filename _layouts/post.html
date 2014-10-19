@@ -9,5 +9,13 @@ layout: default
     <article class="post-content">
         {{ content }}
     </article>
+    <div class="post-footer">
+    {%if page.previous %}
+    <i class="fa fa-link"></i> <a href="{{page.previous.url}}">{{page.previous.title}} : 上一篇</a><br/>
+    {% endif %}
+    {%if page.next %}
+    <i class="fa fa-link"></i> <a href="{{page.next.url}}">{{page.next.title}} : 下一篇</a>
+    {% endif %}
+    </div>
     {% include custom/duoshuo.html %}
 </div>
