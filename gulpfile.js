@@ -25,14 +25,7 @@ gulp.task('copy', ['clean'], function() {
       prefix: 1
     }))
 })
-gulp.task('css', ['copy'], function() {
-  return gulp
-    .src(['./assets/css/*'])
-    .pipe(concat('all.css'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest('dist/css'))
-})
-gulp.task('less', function(){
+gulp.task('less', ['copy'] ,function(){
   return gulp
     .src(['./assets/less/*.less', '!./assets/less/_*.less'])
     .pipe(less())
@@ -41,8 +34,8 @@ gulp.task('less', function(){
     .pipe(gulp.dest('dist/css'))
 })
 gulp.task('watch', function(){
-  // gulp.watch('assets/**/*', ['build'])
-  gulp.watch('assets/**/*.less', ['less'])
+  gulp.watch('assets/**/*', ['build'])
+  // gulp.watch('assets/**/*.less', ['less'])
 })
-gulp.task('build', ['copy', 'css'])
+gulp.task('build', ['copy', 'less'])
 gulp.task('default', ['build'])
