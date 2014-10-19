@@ -14,25 +14,26 @@ github: "https://github.com/noyobo/noyobo.github.com/tree/master/"
 
 #pygments: true
 highlighter: pygments
-markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown: redcarpet  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
-# redcarpet:
-#   extensions:
-#     - fenced_code_blocks
-#     - no_intra_emphasis
-#     - strikethrough
-#     - no_intra_emphasis
-#     - autolink
-#     - tables
-kramdown:
-  input:            GFM
-  auto_id_prefix:   ''
-  auto_ids:         true
+redcarpet:
   extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - no_intra_emphasis
     - autolink
-    - footnotes
-    - smart
+    - tables
+    - with_toc_data
+# kramdown:
+#   input:            GFM
+#   auto_id_prefix:   ''
+#   auto_ids:         true
+#   extensions:
+#     - autolink
+#     - footnotes
+#     - smart
   # transliterated_header_ids: false
   # footnote_nr:   1
   # entity_output: as_char

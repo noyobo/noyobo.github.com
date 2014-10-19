@@ -7,7 +7,6 @@ tags: [blog]
 keywords: jekyll,kramdown,jekyll语法高亮,config.yml
 ---
 
-
 ## 像写github一样写博客
 
 上一个[版本](https://github.com/noyobo/noyobo.github.com/blob/730dfe8c9433a6327b11c98cb34c8e97e23e9005/_config.yml), 写博客 代码高亮使用的是
@@ -39,7 +38,7 @@ redcarpet:
     - tables
 ```
 
-这种配置可以 按照  ` ``` ` 这样的方式, 自动链接,代码块 等基本功能都可以满足了. H1~H6不会自动加上ID.
+这种配置可以 按照  <code>```</code> 这样的方式, 自动链接,代码块 等基本功能都可以满足了.
 
 ## karkdown
 
@@ -80,7 +79,7 @@ kramdown:
 
 标题功能还可以自定义 ID, 否则自动生成ID, 都看过 github 上的标题自动锚点功能就知道
 
-```
+```html
 Hello        {#id}
 -----
 
@@ -140,3 +139,4 @@ Hello        {#id}
 - http://jekyllrb.com/docs/home/
 - http://jekyllrb.com/docs/configuration/#kramdown
 - http://tigefa.readthedocs.org/en/latest/config.html
+- http://ben.balter.com/2014/03/13/pages-anchor-links/

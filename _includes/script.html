@@ -3,7 +3,20 @@
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });</script>
 <!-- highlight -->
 <script src="{{ "/dist/js/highlight.pack.js" | prepend:site.baseurl}}"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
+<script>
+hljs.initHighlightingOnLoad();
+$(function() {
+  return $(".post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.prepend($("<a class='header-link' />").attr("href", "#" + id).html(icon));
+    }
+  });
+});
+</script>
 <!-- duoshuo -->
 <script type="text/javascript"> var duoshuoQuery = {short_name: "noyobo"}; (function() {var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true; ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js'; ds.charset = 'UTF-8'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds); })(); </script>
 <!-- top-scrooll -->
