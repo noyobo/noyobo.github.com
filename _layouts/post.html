@@ -10,11 +10,11 @@ layout: default
         {{ content }}
     </article>
     <div class="post-footer">
-    {%if page.previous %}
-    上一篇 <i class="fa fa-link"></i> <a href="{{page.previous.url}}">{{page.previous.title}}</a><br/>
-    {% endif %}
     {%if page.next %}
-    下一篇 <i class="fa fa-link"></i> <a href="{{page.next.url}}">{{page.next.title}}</a>
+    下一篇 <i class="fa fa-link"></i> <a href="{{page.next.url}}">{{page.next.title}}</a><br/>
+    {% endif %}
+    {%if page.previous %}
+    上一篇 <i class="fa fa-link"></i> <a href="{{page.previous.url}}">{{page.previous.title}}</a>
     {% endif %}
     </div>
     {% include custom/duoshuo.html %}
