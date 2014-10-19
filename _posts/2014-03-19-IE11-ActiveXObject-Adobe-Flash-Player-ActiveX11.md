@@ -43,6 +43,7 @@ TypeError: Unable to get property 'description' of undefined or null reference
 typeof(new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")); //object
 (new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")).GetVariable("$version"); //WIN 11,6,602,168
 ```
+
 `window.ActiveXObject` 如官方描述,已经隐藏了. 但是还是可以 `new window.ActiveXObject`
 
 `(navigator.plugins["Shockwave Flash"]).description` 运行报错 `TypeError: Unable to get property 'description' of undefined or null reference`
@@ -76,6 +77,7 @@ typeof(new window.ActiveXObject("ShockwaveFlash.ShockwaveFlash")); //object
 
 实际遇到的问题:
 先看看 [swfObject](https://github.com/swfobject/swfobject) 源码里是怎么判断的[#L5](https://github.com/swfobject/swfobject/blob/562fe358216edbb36445aa62f817c1a56252950c/swfobject/src/swfobject.js#L51)
+
 ```javascript
 if (typeof nav.plugins !== UNDEF && typeof nav.plugins[SHOCKWAVE_FLASH] === OBJECT) {
     d = nav.plugins[SHOCKWAVE_FLASH].description;
@@ -108,6 +110,7 @@ else if (typeof win.ActiveXObject !== UNDEF) {
 直接无效了
 
 jplayer 里的检测方法是[#L2866](https://github.com/happyworm/jPlayer/blob/3c9abf5527dc0f8f5e6179e79c4d51155afc107c/jquery.jplayer/jquery.jplayer.js#L2866)
+
 ```javascript
 _getFlashPluginVersion: function() {
 	// _getFlashPluginVersion() code influenced by:
@@ -137,6 +140,7 @@ _getFlashPluginVersion: function() {
 	return version * 1; // Converts to a number
 }
 ```
+
 也挂了.
 
 再看看 kissy的
@@ -146,7 +150,6 @@ _getFlashPluginVersion: function() {
 function getFlashVersion() {
     var ver,
         SF = "ShockwaveFlash";
-
     // for NPAPI see: http://en.wikipedia.org/wiki/NPAPI
     if (navigator.plugins && navigator.mimeTypes.length) {
         ver = (navigator.plugins["Shockwave Flash"] || 0).description;
@@ -160,16 +163,15 @@ function getFlashVersion() {
             // nothing to do, just return undefined
         }
     }
-
     // 插件没安装或有问题时，ver 为 undefined
     if (!ver) {
         return undefined;
     }
-
     // 插件安装正常时，ver 为 "Shockwave Flash 10.1 r53" or "WIN 10,1,53,64"
     return getArrayVersion(ver);
 }
 ```
+
 ## 结论 ##
 在 IE11 并且 **Adebo Flash Player 11 ActiveX** 的时候.
 
@@ -179,6 +181,7 @@ typeof navigator.plugins["Shockwave Flash"]; //undefined
 
 ## 解决方案 ##
 以swfobject为例
+
 ```javascript
 if (typeof nav.plugins !== UNDEF && typeof nav.plugins[SHOCKWAVE_FLASH] === OBJECT) {
     //some code
@@ -200,4 +203,5 @@ else{ // IE 11 ActiveXObject == undefined
     catch (e) {}
 }
 ```
+
 如果你有更好的解决办法, 也欢迎留言交流:)

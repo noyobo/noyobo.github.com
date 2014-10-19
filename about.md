@@ -10,7 +10,7 @@ permalink: /about/
 
 https://github.com/noyobo/sublime-xtemplate-snippets
 
-> **Xtemplate** Sbulime text 语法插件 [![https://sublime.wbond.net/packages/Xtemplate](http://img.shields.io/badge/Xtemplate--sublime--package-ST2/ST3-green.svg)](https://sublime.wbond.net/packages/Xtemplate)
+> **Xtemplate** Sbulime text 语法插件 [![https://sublime.wbond.net/packages/Xtemplate](http://img.shields.io/badge/Xtemplate-ST2/ST3-green.svg)](https://sublime.wbond.net/packages/Xtemplate)
 
 ### badgeboard
 

@@ -26,7 +26,7 @@ $ npm install -g gbm
 ## Usage
 
 
-```
+```ruby
   Usage: gbm <commands> [options]
 
   Commands:

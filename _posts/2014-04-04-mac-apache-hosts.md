@@ -26,6 +26,7 @@ category: mac
 
 增加虚拟主机记录
 示例：
+
 ```xml
   <VirtualHost 127.0.0.1:80>
       ServerAdmin noyobo@gmail.com

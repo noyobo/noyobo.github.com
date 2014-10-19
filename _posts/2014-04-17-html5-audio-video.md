@@ -8,6 +8,7 @@ category: html
 ---
 
 `<audio>` 标签属性：
+
 * src：音乐的URL
 * preload：预加载
 * autoplay：自动播放
@@ -15,6 +16,7 @@ category: html
 * controls：浏览器自带的控制条
 
 `<video>` 标签属性：
+
 * src：视频的URL
 * poster：视频封面，没有播放时显示的图片
 * preload：预加载

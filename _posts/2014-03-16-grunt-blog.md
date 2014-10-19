@@ -17,6 +17,7 @@ keywords: grunt
 看这些项目里都的 Gruntfile.js 也可以学到一些写法。
 
 比如，我只项目中经常要对更改的点 做 git commit 。 比较常用的命令
+
 ```javascript
 exec: {
 	commit:{

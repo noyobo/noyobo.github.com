@@ -31,6 +31,7 @@ grunt.loadNpmTasks('grunt-sass');
 `$ npm install --save-dev matchdep` 首先安装到你的项目中
 
 在 `gruntfile.js` 替换大片 `grunt.loadNpmTasks` 如下
+
 ```javascript
 // 批量执行 grunt.loadNpmTasks
 require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);

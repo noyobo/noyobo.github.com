@@ -2,32 +2,32 @@
 layout: post
 title: "Xtemplate Sublime Text 语法高亮及自动完成插件"
 description: "Xtemplate Sublime Text 语法高亮及自动完成插件"
-tags: [blog,software]
+tags: [sublime]
 keywords: sublime,xtemplate
 category: software
 ---
 
-## 特点
+## 特点 {#tedian}
 
-###支持 [Xtemplate Syntax][5] 自动完成
+### 支持 [Xtemplate Syntax][5] 自动完成
 
 ![auto completions](https://cloud.githubusercontent.com/assets/1292082/4594591/0a629d9c-5091-11e4-8acf-6755f2631f98.gif)
 
 输入 `x` 开始匹配  详细匹配的列表 查看 [SNIPPETS.md][6]
 
-###支持常用 HTML 标签快捷输入
+### 支持常用 HTML 标签快捷输入
 
 ![HTML TAGS](https://cloud.githubusercontent.com/assets/1292082/4593753/20460dd6-5089-11e4-9b76-3c2ca0f379d9.gif)
 
 详细匹配的列表 查看 [SNIPPETS.md][7]
 
-###支持常用 HTML 属性自动完成
+### 支持常用 HTML 属性自动完成
 
 ![HTML ATTR](https://cloud.githubusercontent.com/assets/1292082/4601450/79ebf5fa-50ff-11e4-99c6-288161b5c986.png)
 
 详细匹配的列表 查看 [HTML-Attr.YAML-sublime-completions](https://github.com/noyobo/sublime-xtemplate-snippets/blob/master/Completions/SHS-HTML-Attr/HTML-Attr.YAML-sublime-completions)
 
-###个性配色 扩展 Monokia Color Scheme
+### 个性配色 扩展 Monokia Color Scheme
 
 语法高亮的颜色取决你正在使用的配色方案.  由于我使用的是  Monokai.   我配置的 [Xtemplate Syntax][5] 的高亮方案 基于 官方 KISSY的 LOGO色 ![logo](http://gtms01.alicdn.com/tps/i1/T1MVbxFoRcXXchhRni-175-68.png)
 
@@ -37,7 +37,7 @@ category: software
 
 ![color](https://cloud.githubusercontent.com/assets/1292082/4593827/d07ebdce-5089-11e4-994e-35ca8073cdcd.png)
 
-##sublime-xtemplate-snippets
+## sublime-xtemplate-snippets
 
 项目基于 [AAAPackageDev][3] Build 使用 Gulp 管理.
 
@@ -47,7 +47,7 @@ category: software
 
 插件为 `.no-sublime-package` 类型 通过 `Package Control` 安装后 源码都会存放在 `Preferences > Browsse Packages...` 下 感兴趣的同学可以看看
 
-##最后
+## 最后
 
 第一次开发插件, 也是一个学习实践的过程. 特别是其中对 regex 的使用.
 

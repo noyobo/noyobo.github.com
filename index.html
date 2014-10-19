@@ -23,17 +23,19 @@ layout: default
         {{ page.content }}
     </article>
     {% endfor %}
-    <ul class="posts">
-        <li class="listing-seperator">The crazy of tomorrow ...</li>
+    <hr/>
+    <ul class="post-list">
+        <li class="listing-seperator"><i class="fa fa-heart"> </i> The crazy of tomorrow ...</li>
         {% capture month %}{{ site.time | date:"%m"}}{% endcapture %}
         {% for post in site.posts %}
-        {% capture m %}{{ post.date | date:"%m"}}{% endcapture %}{% if month != m %}{% break %}{% endif %}
+        {% capture m %}{{ post.date | date:"%m"}}{% endcapture %}
+        {% if month != m %}{% break %}{% endif %}
         <li class="listing-item">
             <time datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%Y-%m-%d" }}</time>
             <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        <li class="listing-seperator"><a href="/archive/">Long long age ...</a>
+        <li class="listing-seperator"><i class="fa fa-heart-o"></i> <a href="/archive/">Long long age ...</a>
         </li>
     </ul>
 </div>

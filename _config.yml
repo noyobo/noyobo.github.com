@@ -7,15 +7,34 @@ baseurl: ""
 url: "http://noyobo.com"
 atom-baseurl: "http://noyobo.com"
 author: "noyobo"
+github: "https://github.com/noyobo/noyobo.github.com/tree/master/"
 
 # Build settings
 # permalink: date
 
 #pygments: true
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
+# redcarpet:
+#   extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
+kramdown:
+  input:         GFM
+  auto_ids:      true
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   true
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         2
+    coderay_bold_every:        10
+    coderay_css:               style
 
 duoshuo:
   comments :
@@ -24,24 +43,21 @@ duoshuo:
       short_name : noyobo
 
 navigations:
-  - title: Npm
-    class: fa fa-list-ul
+  - title: project
+    class: fa fa-code
     href: http://noyobo.com/badgeboard/
-  - title: About
-    class: fa fa-list-ul
-    href: /about
-  - title: Archive
-    class: fa fa-tags
-    href: /archive
-  - title: Categories
+  - title: about
     class: fa fa-user
+    href: /about
+  - title: archive
+    class: fa fa-archive
+    href: /archive
+  - title: categories
+    class: fa fa-folder
     href: /categories
-  - title: Tags
-    class: fa fa-film
+  - title: tags
+    class: fa fa-tags
     href: /tags
-  - title: Rss
-    class: fa fa-rss
-    href: /rss.xml
   - title: 404
-    class: fa fa-list-ul
+    class: fa fa-coffee
     href: /404

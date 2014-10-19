@@ -18,13 +18,14 @@
     "url": "https://github.com/noyobo/noyobo.github.com/issues"
   },
   "homepage": "https://github.com/noyobo/noyobo.github.com",
-  "dependencies": {
+  "devDependencies": {
     "del": "^0.1.3",
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.1",
     "gulp-copy": "0.0.2",
     "gulp-minify-css": "^0.3.11",
-    "markdown-creator": "^0.1.5",
-    "yamljs": "^0.2.0"
+    "yamljs": "^0.2.0",
+    "gulp-less": "^1.3.6",
+    "gulp-rename": "^1.2.0"
   }
 }
