@@ -1,4 +1,5 @@
 <script>
+// header h2~h6 autolink
 $(function() {
   return $(".post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6").each(function(i, el) {
     var $el, icon, id;
@@ -10,10 +11,18 @@ $(function() {
     }
   });
 });
+// scroll top
+$(window).scroll(function() {if ($(this).scrollTop() > 100) {$('.scroll-top').fadeIn(200); } else {$('.scroll-top').fadeOut(200); } }); $('.scroll-top').bind('click', function(e) {e.preventDefault(); $('body,html').animate({scrollTop: 0 }, 200); });
 </script>
-<!-- top-scrooll -->
-<script type="text/javascript"> $(window).scroll(function() {if ($(this).scrollTop() > 100) {$('.scroll-top').fadeIn(200); } else {$('.scroll-top').fadeOut(200); } }); $('.scroll-top').bind('click', function(e) {e.preventDefault(); $('body,html').animate({scrollTop: 0 }, 200); }); </script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
-<!-- mathjax -->
+<!-- mathjax
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} });</script>
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49864231-1', 'auto');
+  ga('send', 'pageview');
+</script>
