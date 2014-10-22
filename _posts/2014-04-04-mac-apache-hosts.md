@@ -20,6 +20,8 @@ category: mac
 
 `#Include /private/etc/apache2/extra/httpd-vhosts.conf`
 
+`#LoadModule php5_module libexec/apache2/libphp5.so` 载入PHP
+
 去掉# 保存
 
 `$ sudo vi /etc/apache2/extra/httpd-vhosts.conf`
@@ -27,18 +29,24 @@ category: mac
 增加虚拟主机记录
 示例：
 
-```xml
-  <VirtualHost 127.0.0.1:80>
-      ServerAdmin noyobo@gmail.com
-      DocumentRoot "/Users/xiamibao/home/gitlab"
-      ServerName gitlabswf.xiami.com
-      ErrorLog "/private/var/log/apache2/gitlabswf.xiami.com-error_log"
-      CustomLog "/private/var/log/apache2/gitlabswf.xiami.com-access_log" common
-      <Directory />
-          Options Indexes MultiViews
-          AllowOverride All
-          Order allow,deny
-          Allow from all
-      </Directory>
-  </VirtualHost>
+```bash
+<VirtualHost *:80>
+    ServerAdmin noyobo@gmail.com
+    DocumentRoot "/Users/noyobo/home"
+    ServerName home.xiami.com
+    ErrorLog "/private/var/log/apache2/home.xiami.com-error_log"
+    CustomLog "/private/var/log/apache2/home.xiami.com-access_log" common
+    <Directory "/Users/noyobo/home" >
+        Options FollowSymLinks Indexes MultiViews
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        Require all granted  # 如果遇到 403 尝试开启
+    </Directory>
+</VirtualHost>
+```
+
+```
+$ sudo apachectl stop
+$ sudo apachectl start
 ```
