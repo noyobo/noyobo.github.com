@@ -71,6 +71,6 @@ navigations:
   - title: tags
     class: fa fa-tags
     href: /tags
-  - title: 404
-    class: fa fa-coffee
-    href: /404
+#  - title: 404
+#    class: fa fa-coffee
+#    href: /404
