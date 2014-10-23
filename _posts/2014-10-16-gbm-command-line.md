@@ -5,6 +5,7 @@ description: "gbm git分支管理工具,释放你的双手,简化你的输入操
 category: git
 tags: [npm,git]
 keywords: git,branch
+date: 2014-10-16 14:45:30
 ---
 gbm
 ===
