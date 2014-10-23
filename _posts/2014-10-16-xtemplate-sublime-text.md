@@ -5,6 +5,7 @@ description: "Xtemplate Sublime Text 语法高亮及自动完成插件"
 tags: [sublime]
 keywords: sublime,xtemplate
 category: software
+date: 2014-10-16 16:46:05
 ---
 
 ## 特点 {#tedian}
