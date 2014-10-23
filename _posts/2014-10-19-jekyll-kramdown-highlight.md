@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "jekyll kramdown 语法高亮配置"
-description: ""
+description: "jekyll kramdown 语法高亮配置"
 category: jekyll
 tags: [blog]
 keywords: jekyll,kramdown,jekyll语法高亮,config.yml
+date: 2014-10-19 12:10:04
 ---
 
 ## 像写github一样写博客
