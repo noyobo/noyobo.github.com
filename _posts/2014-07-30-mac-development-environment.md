@@ -39,3 +39,30 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 ```javascript
 $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /bin/subl
 ```
+
+```json
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/Xtemplate/Monokai(Xtemplate).tmTheme",
+	"default_line_ending": "unix",
+	"draw_white_space": "all",
+	"font_size": 14,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"word_wrap": "auto",
+	"wrap_width": 80
+}
+```
