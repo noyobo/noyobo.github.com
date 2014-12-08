@@ -20,7 +20,9 @@ category: mac
 
 `#Include /private/etc/apache2/extra/httpd-vhosts.conf`
 
+`LoadModule rewrite_module libexec/apache2/mod_rewrite.so` #开启rewrite
 `#LoadModule php5_module libexec/apache2/libphp5.so` 载入PHP
+
 
 去掉# 保存
 
