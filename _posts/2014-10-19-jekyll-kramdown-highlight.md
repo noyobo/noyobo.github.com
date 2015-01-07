@@ -8,6 +8,16 @@ keywords: jekyll,kramdown,jekyll语法高亮,config.yml
 date: 2014-10-19 12:10:04
 ---
 
+---
+layout: post
+title: "jekyll kramdown 语法高亮配置"
+description: "jekyll kramdown 语法高亮配置"
+category: jekyll
+tags: [blog]
+keywords: jekyll,kramdown,jekyll语法高亮,config.yml
+date: 2014-10-19 12:10:04
+---
+
 ## 像写github一样写博客
 
 上一个[版本](https://github.com/noyobo/noyobo.github.com/blob/730dfe8c9433a6327b11c98cb34c8e97e23e9005/_config.yml), 写博客 代码高亮使用的是
