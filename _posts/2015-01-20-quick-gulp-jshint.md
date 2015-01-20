@@ -22,7 +22,8 @@ gulp.task('lint', function(){
 ```
 
 `.jshintrc`
-```
+
+```json
 {
   "node": true,
   "esnext": true,
