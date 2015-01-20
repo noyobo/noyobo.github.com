@@ -7,6 +7,8 @@ keywords: jshint
 date: 2015-01-20 10:22:36
 ---
 
+## jshint docs
+
 http://jshint.com/docs/
 
 ```javascript
