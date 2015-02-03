@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 多行文本溢出省略...
+description: -webkit-line-clamp 多行文本溢出截断方案.
 tags: css
 category: css
 keywords: ellipsis, text-overflow
