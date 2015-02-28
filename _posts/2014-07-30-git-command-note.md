@@ -21,4 +21,11 @@ category: git
 
 `$ git push origin master -f` 强制推送
 
+## 创建空分支(无历史 commit)
+
+```bash
+git checkout --orphan gh-pages
+# 创建一个orphan的分支，这个分支是独立的
+Switched to a new branch 'gh-pages'
+```
 
