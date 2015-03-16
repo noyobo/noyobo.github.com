@@ -18,9 +18,20 @@ category: mac
 
 `$ sudo vi /etc/apache2/httpd.conf`
 
+```bash
+<Directory />
+    # Require all denied
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Order deny,allow
+    Allow from all
+</Directory>
+```
+
 `#Include /private/etc/apache2/extra/httpd-vhosts.conf`
 
 `LoadModule rewrite_module libexec/apache2/mod_rewrite.so` #开启rewrite
+
 `#LoadModule php5_module libexec/apache2/libphp5.so` 载入PHP
 
 
