@@ -14,11 +14,13 @@ keywords: gulp-jshint
 ```
 var jshint = require('gulp-jshint')
 var stylish = require('jshint-stylish')
-gulp.task('lint', function(){
+gulp.task('lint', function() {
   return gulp
-    .src(['./lib/*.js', './cli.js', 'index.js'])
+    .src(['./lib/*.js','./plugin/*.js', 'index.js'])
     .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter(stylish))
+    .pipe(jshint.reporter(stylish, {
+      verbose: true
+    }))
 })
 
 ```
