@@ -11,7 +11,7 @@ keywords: gulp-jshint
 `npm i --save-dev gulp-jshint jshint-stylish`
 
 ## gulp task
-```
+```js
 var jshint = require('gulp-jshint')
 var stylish = require('jshint-stylish')
 gulp.task('lint', function() {
