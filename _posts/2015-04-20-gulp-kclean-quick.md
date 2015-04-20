@@ -11,6 +11,17 @@ date: 2015-04-20 11:03:31
 ## kmc task
 
 ```js
+var abc = require('./abc.json');
+var pkg = abc.group + '/' + abc.name + '/' + abc.version;
+var comboSuffix = '-min';
+kmc.config({
+    packages: [{
+        name: pkg,
+        base: './src'
+    }]
+});
+
+
 function renderKmc(fileName) {
     var comboFiles = fileName.map(function (name) {
         return {
