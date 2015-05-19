@@ -71,6 +71,9 @@ navigations:
   - title: tags
     class: fa fa-tags
     href: /tags
+  - title: labs
+    class: fa fa-bomb
+    href: /labs
 #  - title: 404
 #    class: fa fa-coffee
 #    href: /404
