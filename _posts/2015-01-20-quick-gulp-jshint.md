@@ -21,6 +21,7 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter(stylish, {
       verbose: true
     }))
+    .pipe(jshint.reporter('fail'))
 })
 
 ```
