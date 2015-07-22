@@ -28,6 +28,18 @@ abcd ab abd
 
 **`/(?<=bc)d/g`** 匹配上述文本中的字母 `d`, 逆序环视, 其中`(?<=bc)` 表示匹配 `bc` 的右文本位置, 也就是  `abc^d` **^** 的位置
 
+## 实战
+
+使用环视功能实现 JavaScript 数字三位分割
+
+```js
+var money = '1234567890';
+money = money.replace(/(\d)(?=(\d\d\d)+$)/g, function($1) {
+    return $1 + ',';
+})
+console.log(money);
+```
+
 ## 参考
 
 > 测试工具: http://regexr.sinaapp.com/
