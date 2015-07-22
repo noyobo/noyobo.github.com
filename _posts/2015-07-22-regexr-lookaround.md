@@ -37,7 +37,7 @@ var money = '1234567890';
 money = money.replace(/(\d)(?=(\d\d\d)+$)/g, function($1) {
     return $1 + ',';
 })
-console.log(money);
+console.log(money); // 1,234,567,890
 ```
 
 ## 参考
