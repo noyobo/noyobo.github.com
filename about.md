@@ -8,9 +8,9 @@ permalink: /about/
 
 ### Xtemplate sublime text  language syntax
 
-https://github.com/noyobo/sublime-xtemplate-snippets
+https://github.com/noyobo/sublime-xtemplate
 
-> **Xtemplate** Sbulime text 语法插件 [![https://sublime.wbond.net/packages/Xtemplate](http://img.shields.io/badge/Xtemplate-ST2/ST3-green.svg)](https://sublime.wbond.net/packages/Xtemplate)
+> **Xtemplate** Sbulime text 语法插件 [![https://packagecontrol.io/packages/Xtemplate](http://img.shields.io/badge/Xtemplate-ST2/ST3-green.svg)](https://packagecontrol.io/packages/Xtemplate)
 
 ### badgeboard
 
