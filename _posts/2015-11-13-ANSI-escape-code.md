@@ -58,5 +58,5 @@ console.log('\x1B[37;1m加粗效果\x1B[0m重置加粗效果');
 
 ```
 
-<img width="250" alt="2015-11-13 00 27 14" src="https://cloud.githubusercontent.com/assets/1292082/11123967/6c12de6c-899d-11e5-9f40-72735ab26fb1.png">
+<img width="400" alt="2015-11-13 00 27 14" src="https://cloud.githubusercontent.com/assets/1292082/11123967/6c12de6c-899d-11e5-9f40-72735ab26fb1.png">
 
