@@ -4,7 +4,7 @@
 # Git info
 local git_info='$(git_prompt_info)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg_bold[magenta]%}⤵%{$reset_color%}  %{$fg[blue]%}git:(%{$fg_bold[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[magenta]%}⤵%{$reset_color%}  %{$fg[blue]%}git:(%{$fg_bold[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) 🖌" # Ⓓ %{$fg[yellow]%} 
@@ -23,8 +23,8 @@ local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 
 
 PROMPT="%{$fg_bold[blue]%}#%{$reset_color%} \
-%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n) \
-%{$fg_bold[gray]%}🕑  %* \
+%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[white]%}%n) \
+%{$fg_bold[green]%}🕑  %* \
 ${git_info} \
 $exit_code
 ${ret_status}%{$fg_bold[cyan]%}%c%{$reset_color%} \
