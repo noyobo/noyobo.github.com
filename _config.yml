@@ -14,7 +14,7 @@ github: "https://github.com/noyobo/noyobo.github.com/tree/master/"
 
 #pygments: true
 highlighter: pygments
-markdown: redcarpet  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 redcarpet:
