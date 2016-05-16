@@ -26,20 +26,22 @@ redcarpet:
     - autolink
     - tables
     - with_toc_data
-# kramdown:
-#   input:            GFM
-#   auto_id_prefix:   ''
-#   auto_ids:         true
-#   extensions:
-#     - autolink
-#     - footnotes
-#     - smart
-  # transliterated_header_ids: false
-  # footnote_nr:   1
-  # entity_output: as_char
-  # toc_levels:    1..6
-  # smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  # use_coderay:   true
+kramdown:
+  input:            GFM
+  auto_id_prefix:   ''
+  auto_ids:         true
+  syntax_highlighter: rouge
+  extensions:
+   - autolink
+   - footnotes
+   - smart
+  transliterated_header_ids: false
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   true
+    coderay_line_numbers:  nil
 
   # coderay:
   #   coderay_wrap:              div
