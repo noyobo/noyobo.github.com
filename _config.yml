@@ -13,19 +13,19 @@ github: "https://github.com/noyobo/noyobo.github.com/tree/master/"
 # permalink: date
 
 #pygments: true
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
-redcarpet:
-  extensions:
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - strikethrough
-    - no_intra_emphasis
-    - autolink
-    - tables
-    - with_toc_data
+# redcarpet:
+#   extensions:
+#     - fenced_code_blocks
+#     - no_intra_emphasis
+#     - strikethrough
+#     - no_intra_emphasis
+#     - autolink
+#     - tables
+#     - with_toc_data
 kramdown:
   input:            GFM
   auto_id_prefix:   ''
@@ -41,7 +41,7 @@ kramdown:
   toc_levels:    1..6
   smart_quotes:  lsquo,rsquo,ldquo,rdquo
   use_coderay:   true
-    coderay_line_numbers:  nil
+    coderay_line_numbers: nil
 
   # coderay:
   #   coderay_wrap:              div
